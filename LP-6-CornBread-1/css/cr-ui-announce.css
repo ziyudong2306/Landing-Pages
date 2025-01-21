@@ -1,0 +1,14 @@
+.cr-ui-announce{}
+
+.cr-ui-announce .announce-text {
+  overflow: hidden;
+  position:relative;
+  display: block;
+}
+
+.cr-ui-announce .announce-text {
+  margin: 0;
+  text-align:center;
+
+}
+

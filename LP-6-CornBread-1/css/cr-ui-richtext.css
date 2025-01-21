@@ -1,0 +1,20 @@
+.cr-ui-richtext{position:relative;}
+.cr-ui-richtext .richtext-text{overflow:hidden;}
+
+
+.ui-richtext-content.text-center .cr-ui-icon-image {margin:0 auto;}
+
+.cr-ui-textarea--kopius,
+.cr-ui-richtext--kopius {
+  --headline-font:  'Kopius', serif;
+}
+
+.cr-ui-textarea--poppins,
+.cr-ui-richtext--poppins {
+  --headline-font: 'Poppins', sans-serif;
+}
+
+.cr-ui-textarea--roboto,
+.cr-ui-richtext--roboto {
+  --headline-font: 'Roboto', sans-serif;
+}
