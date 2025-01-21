@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cabin Italic'), local('Cabin-Italic'), url(d1fae387151fc0d6d139eea1e70a1cd6/css/c054818a368801da2863e3fdece83638.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Cabin Medium Italic'), local('Cabin-MediumItalic'), url(d1fae387151fc0d6d139eea1e70a1cd6/css/5b308c8d8ebdbaa41a6eaf8994013488.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin'), local('Cabin-Regular'), url(d1fae387151fc0d6d139eea1e70a1cd6/css/0a484628716196690545d03b6a32aad7.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Cabin Medium'), local('Cabin-Medium'), url(d1fae387151fc0d6d139eea1e70a1cd6/css/09f830b838c5ea87ced39552ead757f9.ttf) format('truetype');
+}
