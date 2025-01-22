@@ -168,18 +168,25 @@ modBarjquery.ajax({
       window.PXUTheme.version = '9.1.0';
       window.PXUTheme.name = 'Turbo';
                 </script>
-        <template id="price-ui"><span class="price" data-price=""> </span><span class="compare-at-price" data-compare-at-price=""> </span><span class="unit-pricing" data-unit-pricing=""> </span>
+        <template id="price-ui">
+            <span class="price" data-price=""> </span>
+            <span class="compare-at-price" data-compare-at-price=""> </span>
+            <span class="unit-pricing" data-unit-pricing=""> </span>
         </template>
         <template id="price-ui-badge">
-            <div class="price-ui-badge__sticker price-ui-badge__sticker--"><span class="price-ui-badge__sticker-text" data-badge=""> </span>
+            <div class="price-ui-badge__sticker price-ui-badge__sticker--">
+                <span class="price-ui-badge__sticker-text" data-badge=""> </span>
             </div>
         </template>
-        <template id="price-ui__price"><span class="money" data-price=""> </span>
+        <template id="price-ui__price">
+            <span class="money" data-price=""> </span>
         </template>
-        <template id="price-ui__price-range"><span class="price-min" data-price-min=""> <span class="money" data-price=""> </span> </span>
+        <template id="price-ui__price-range">
+            <span class="price-min" data-price-min=""> <span class="money" data-price=""> </span> </span>
             -<span class="price-max" data-price-max=""> <span class="money" data-price=""> </span> </span>
         </template>
-        <template id="price-ui__unit-pricing"><span class="unit-quantity" data-unit-quantity=""> </span>
+        <template id="price-ui__unit-pricing">
+            <span class="unit-quantity" data-unit-quantity=""> </span>
             |<span class="unit-price" data-unit-price=""> <span class="money" data-price=""> </span> </span>
             /<span class="unit-measurement" data-unit-measurement=""> </span>
         </template>
@@ -829,7 +836,8 @@ window.onbeforeunload = () => {
                  </script>
         <!-- ADD TO CART POPUP -->
         <div class="mm-atc-popup" style="display:none;">
-            <div class="mm-atc-head"><span> </span>
+            <div class="mm-atc-head">
+                <span> </span>
                 <div onclick="mmAddToCartPopup(\'hide\');">
                     <svg height="12" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z">
@@ -845,7 +853,8 @@ window.onbeforeunload = () => {
                     <div class="mm-atc-product-variant">
 </div>
                 </div>
-            </div><a class="mm-atc-view-cart" href="/cart">
+            </div>
+            <a class="mm-atc-view-cart" href="/cart">
                    VIEW CART </a>
         </div>
         <!-- HIDE ORIGINAL MENU -->
@@ -1455,8 +1464,7 @@ for (var attr in meta) {
     }
    </script>
         <header class="mobile_nav-fixed--true" id="header">
-            <div class="top-bar">
-                <a class="mobile_logo logo" href="/" tabindex="0" title="The Ayurveda Experience"> <img alt="The Ayurveda Experience" class="lazyload" src="images/logo.svg" style="object-fit: cover; object-position: 50.0% 50.0%;"/> </a>
+            <div class="top-bar"><a class="mobile_logo logo" href="/" tabindex="0" title="The Ayurveda Experience"> <img alt="The Ayurveda Experience" class="lazyload" src="images/logo.svg" style="object-fit: cover; object-position: 50.0% 50.0%;"/> </a>
                 <div class="top-bar--right">
                     <div class="cart-container">
 </div>
@@ -1469,14 +1477,17 @@ for (var attr in meta) {
 </div>
                 <div class="main-nav__wrapper">
                     <div class="main-nav menu-position--inline logo-alignment--center logo-position--left search-enabled--true">
-                        <div class="header__logo logo--image"><a href="/" tabindex="0" title="The Ayurveda Experience"> <img alt="The Ayurveda Experience" class="primary_logo lazyload" src="images/logo.svg" style="object-fit: cover; object-position: 50.0% 50.0%;"/> </a>
+                        <div class="header__logo logo--image">
+                            <a href="/" tabindex="0" title="The Ayurveda Experience"> <img alt="The Ayurveda Experience" class="primary_logo lazyload" src="images/logo.svg" style="object-fit: cover; object-position: 50.0% 50.0%;"/> </a>
                         </div>
                         <div class="nav nav--combined center">
                             <nav aria-label="Translation missing: en.navigation.header.main_nav" class="nav-desktop" data-nav="" data-nav-desktop="">
                                 <template data-nav-parent-template="">
                                     <li class="nav-desktop__tier-1-item nav-desktop__tier-1-item--widemenu-parent" data-nav-desktop-parent="">
                                         <details data-nav-desktop-details="">
-                                            <summary aria-controls="nav-tier-2-" aria-expanded="false" class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent" data-href="" data-nav-desktop-link="" role="button"><span data-nav-title=""> </span><span class="icon-down-arrow"> </span>
+                                            <summary aria-controls="nav-tier-2-" aria-expanded="false" class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent" data-href="" data-nav-desktop-link="" role="button">
+                                                <span data-nav-title=""> </span>
+                                                <span class="icon-down-arrow"> </span>
                                             </summary>
                                             <div class="nav-desktop__tier-2 nav-desktop__tier-2--full-width-menu" data-meganav-target-container="" data-nav-desktop-full-width-menu="" data-nav-desktop-submenu="" data-nav-desktop-tier-2="" tabindex="-1">
 </div>
@@ -1533,8 +1544,10 @@ for (var attr in meta) {
         <script data-section-id="sections--16464056811697__mega_menu_1" data-section-type="mega-menu-1" type="application/json">
    </script>
         <details>
-            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent"><span>
-      ALL PRODUCTS </span><span class="icon-down-arrow"> </span>
+            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent">
+                <span>
+      ALL PRODUCTS </span>
+                <span class="icon-down-arrow"> </span>
             </summary>
             <div class="mega-menu menu dropdown_content" data-meganav-desktop="" data-meganav-handle="all-products">
                 <div class="dropdown_column">
@@ -1542,48 +1555,62 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY CATEGORY </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="/collections/face-care-oils-serums">
+                            <li>
+                                <a href="/collections/face-care-oils-serums">
           Face Oils &amp; Serums </a>
                             </li>
-                            <li><a href="/collections/face-care-eye-care">
+                            <li>
+                                <a href="/collections/face-care-eye-care">
           Eye Care </a>
                             </li>
-                            <li><a href="/collections/face-care-cleansers">
+                            <li>
+                                <a href="/collections/face-care-cleansers">
           Cleansers </a>
                             </li>
-                            <li><a href="/collections/face-care-masks">
+                            <li>
+                                <a href="/collections/face-care-masks">
           Masks </a>
                             </li>
-                            <li><a href="/collections/face-care-scrubs">
+                            <li>
+                                <a href="/collections/face-care-scrubs">
           Scrubs &amp; Exfoliators </a>
                             </li>
-                            <li><a href="/collections/face-care-toners">
+                            <li>
+                                <a href="/collections/face-care-toners">
           Toners &amp; Mists </a>
                             </li>
-                            <li><a href="/collections/face-care-creams-concentrates">
+                            <li>
+                                <a href="/collections/face-care-creams-concentrates">
           Creams &amp; Concentrates </a>
                             </li>
-                            <li><a href="/collections/face-care-lip-care">
+                            <li>
+                                <a href="/collections/face-care-lip-care">
           Lip Care </a>
                             </li>
-                            <li><a href="/collections/face-care-night-routine">
+                            <li>
+                                <a href="/collections/face-care-night-routine">
           Night Routine </a>
                             </li>
-                            <li><a href="/collections/kansa-wands">
+                            <li>
+                                <a href="/collections/kansa-wands">
           Massage Tools </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/dietary-supplements">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/dietary-supplements">
           Dietary Supplements </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/nutrition-ghee">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/nutrition-ghee">
           Ghee </a>
                             </li>
-                            <li><a href="/collections/vegan">
+                            <li>
+                                <a href="/collections/vegan">
           Vegan </a>
                             </li>
                         </ul>
@@ -1596,24 +1623,30 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a href="https://theayurvedaexperience.com/collections/iyura">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/iyura">
           SHOP BY BRAND </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="/collections/iyura">
+                            <li>
+                                <a href="/collections/iyura">
           iYURA | Authentic Ayurvedic Skincare | Premium &amp; 100% Natural </a>
                             </li>
-                            <li><a href="/collections/ajara-ayurvedic-skin-care">
+                            <li>
+                                <a href="/collections/ajara-ayurvedic-skin-care">
           Ajara | Ayurveda-inspired Daily Skin Care | 100% Natural </a>
                             </li>
-                            <li><a href="/collections/ayuttva-collection">
+                            <li>
+                                <a href="/collections/ayuttva-collection">
           Ayuttva | Supplements &amp; Foods </a>
                             </li>
-                            <li><a href="/collections/a-modernica-naturalis">
+                            <li>
+                                <a href="/collections/a-modernica-naturalis">
           A. Modernica | Ancient Ayurvedic Ingredients + Modern Skin-Science </a>
                             </li>
-                            <li><a href="/collections/educational-courses">
+                            <li>
+                                <a href="/collections/educational-courses">
           The Ayurveda Experience | Learn Ayurveda </a>
                             </li>
                         </ul>
@@ -1627,46 +1660,60 @@ for (var attr in meta) {
             <div data-meganav-handle="all-products" data-meganav-mobile="">
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY CATEGORY <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="/collections/face-care-oils-serums">
+                        <li>
+                            <a href="/collections/face-care-oils-serums">
          Face Oils &amp; Serums </a>
                         </li>
-                        <li><a href="/collections/face-care-eye-care">
+                        <li>
+                            <a href="/collections/face-care-eye-care">
          Eye Care </a>
                         </li>
-                        <li><a href="/collections/face-care-cleansers">
+                        <li>
+                            <a href="/collections/face-care-cleansers">
          Cleansers </a>
                         </li>
-                        <li><a href="/collections/face-care-masks">
+                        <li>
+                            <a href="/collections/face-care-masks">
          Masks </a>
                         </li>
-                        <li><a href="/collections/face-care-scrubs">
+                        <li>
+                            <a href="/collections/face-care-scrubs">
          Scrubs &amp; Exfoliators </a>
                         </li>
-                        <li><a href="/collections/face-care-toners">
+                        <li>
+                            <a href="/collections/face-care-toners">
          Toners &amp; Mists </a>
                         </li>
-                        <li><a href="/collections/face-care-creams-concentrates">
+                        <li>
+                            <a href="/collections/face-care-creams-concentrates">
          Creams &amp; Concentrates </a>
                         </li>
-                        <li><a href="/collections/face-care-lip-care">
+                        <li>
+                            <a href="/collections/face-care-lip-care">
          Lip Care </a>
                         </li>
-                        <li><a href="/collections/face-care-night-routine">
+                        <li>
+                            <a href="/collections/face-care-night-routine">
          Night Routine </a>
                         </li>
-                        <li><a href="/collections/kansa-wands">
+                        <li>
+                            <a href="/collections/kansa-wands">
          Massage Tools </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/dietary-supplements">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/dietary-supplements">
          Dietary Supplements </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/nutrition-ghee">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/nutrition-ghee">
          Ghee </a>
                         </li>
-                        <li><a href="/collections/vegan">
+                        <li>
+                            <a href="/collections/vegan">
          Vegan </a>
                         </li>
                     </ul>
@@ -1675,22 +1722,28 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--true" data-no-instant="" href="https://theayurvedaexperience.com/collections/iyura">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--true" data-no-instant="" href="https://theayurvedaexperience.com/collections/iyura">
        SHOP BY BRAND <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="/collections/iyura">
+                        <li>
+                            <a href="/collections/iyura">
          iYURA | Authentic Ayurvedic Skincare | Premium &amp; 100% Natural </a>
                         </li>
-                        <li><a href="/collections/ajara-ayurvedic-skin-care">
+                        <li>
+                            <a href="/collections/ajara-ayurvedic-skin-care">
          Ajara | Ayurveda-inspired Daily Skin Care | 100% Natural </a>
                         </li>
-                        <li><a href="/collections/ayuttva-collection">
+                        <li>
+                            <a href="/collections/ayuttva-collection">
          Ayuttva | Supplements &amp; Foods </a>
                         </li>
-                        <li><a href="/collections/a-modernica-naturalis">
+                        <li>
+                            <a href="/collections/a-modernica-naturalis">
          A. Modernica | Ancient Ayurvedic Ingredients + Modern Skin-Science </a>
                         </li>
-                        <li><a href="/collections/educational-courses">
+                        <li>
+                            <a href="/collections/educational-courses">
          The Ayurveda Experience | Learn Ayurveda </a>
                         </li>
                     </ul>
@@ -1704,8 +1757,10 @@ for (var attr in meta) {
         <script data-section-id="sections--16464056811697__151d52db-df4e-44e9-ac15-31c26135bbc9" data-section-type="mega-menu-2" type="application/json">
    </script>
         <details>
-            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent"><span>
-      FACE </span><span class="icon-down-arrow"> </span>
+            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent">
+                <span>
+      FACE </span>
+                <span class="icon-down-arrow"> </span>
             </summary>
             <div class="mega-menu menu dropdown_content" data-meganav-desktop="" data-meganav-handle="face">
                 <div class="dropdown_column">
@@ -1713,24 +1768,30 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY SKIN TYPE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="/collections/face-care-dry">
+                            <li>
+                                <a href="/collections/face-care-dry">
           Dry Skin </a>
                             </li>
-                            <li><a href="/collections/face-care-sensitive">
+                            <li>
+                                <a href="/collections/face-care-sensitive">
           Sensitive Skin </a>
                             </li>
-                            <li><a href="/collections/face-care-combination-skin">
+                            <li>
+                                <a href="/collections/face-care-combination-skin">
           Combination Skin </a>
                             </li>
-                            <li><a href="/collections/face-care-oily">
+                            <li>
+                                <a href="/collections/face-care-oily">
           Oily Skin </a>
                             </li>
-                            <li><a href="/collections/face-care-eye-care">
+                            <li>
+                                <a href="/collections/face-care-eye-care">
           Eye Care </a>
                             </li>
                         </ul>
@@ -1743,36 +1804,46 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY CONCERN </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="/collections/face-care-aging-mature-skin">
+                            <li>
+                                <a href="/collections/face-care-aging-mature-skin">
           Aging: Wrinkles &amp; Fine Lines </a>
                             </li>
-                            <li><a href="/collections/face-care-dryness-dehydration">
+                            <li>
+                                <a href="/collections/face-care-dryness-dehydration">
           Dryness &amp; Dehydration </a>
                             </li>
-                            <li><a href="/collections/face-care-acne-and-impurities">
+                            <li>
+                                <a href="/collections/face-care-acne-and-impurities">
           Acne &amp; Impurities </a>
                             </li>
-                            <li><a href="/collections/face-care-blemishes-pigmentation">
+                            <li>
+                                <a href="/collections/face-care-blemishes-pigmentation">
           Blemishes &amp; Pigmentation </a>
                             </li>
-                            <li><a href="/collections/face-care-crows-feet-eye-wrinkles">
+                            <li>
+                                <a href="/collections/face-care-crows-feet-eye-wrinkles">
           Crow's Feet &amp; Eye Wrinkles </a>
                             </li>
-                            <li><a href="/collections/face-care-dark-under-eyes">
+                            <li>
+                                <a href="/collections/face-care-dark-under-eyes">
           Dark Under-Eyes </a>
                             </li>
-                            <li><a href="/collections/face-care-pores">
+                            <li>
+                                <a href="/collections/face-care-pores">
           Pores </a>
                             </li>
-                            <li><a href="/collections/face-care-dullness">
+                            <li>
+                                <a href="/collections/face-care-dullness">
           Dullness </a>
                             </li>
-                            <li><a href="/collections/face-care-excess-oil-1">
+                            <li>
+                                <a href="/collections/face-care-excess-oil-1">
           Excess Oil </a>
                             </li>
                         </ul>
@@ -1785,36 +1856,46 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY CATEGORY </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="/collections/face-care-oils-serums">
+                            <li>
+                                <a href="/collections/face-care-oils-serums">
           Oils and Serums </a>
                             </li>
-                            <li><a href="/collections/face-care-eye-care">
+                            <li>
+                                <a href="/collections/face-care-eye-care">
           Eye Care </a>
                             </li>
-                            <li><a href="/collections/face-care-cleansers">
+                            <li>
+                                <a href="/collections/face-care-cleansers">
           Cleansers </a>
                             </li>
-                            <li><a href="/collections/face-care-masks">
+                            <li>
+                                <a href="/collections/face-care-masks">
           Masks </a>
                             </li>
-                            <li><a href="/collections/face-care-scrubs">
+                            <li>
+                                <a href="/collections/face-care-scrubs">
           Scrubs &amp; Exfoliators </a>
                             </li>
-                            <li><a href="/collections/face-care-toners">
+                            <li>
+                                <a href="/collections/face-care-toners">
           Toners &amp; Mists </a>
                             </li>
-                            <li><a href="/collections/face-care-creams-concentrates">
+                            <li>
+                                <a href="/collections/face-care-creams-concentrates">
           Creams &amp; Concentrates </a>
                             </li>
-                            <li><a href="/collections/face-care-lip-care">
+                            <li>
+                                <a href="/collections/face-care-lip-care">
           Lip Care </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/face-care-massage-tools">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/face-care-massage-tools">
           Massage Tools </a>
                             </li>
                         </ul>
@@ -1827,12 +1908,14 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           HELP ME CHOOSE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
           Product Recommendation </a>
                             </li>
                         </ul>
@@ -1846,22 +1929,28 @@ for (var attr in meta) {
             <div data-meganav-handle="face" data-meganav-mobile="">
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY SKIN TYPE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="/collections/face-care-dry">
+                        <li>
+                            <a href="/collections/face-care-dry">
          Dry Skin </a>
                         </li>
-                        <li><a href="/collections/face-care-sensitive">
+                        <li>
+                            <a href="/collections/face-care-sensitive">
          Sensitive Skin </a>
                         </li>
-                        <li><a href="/collections/face-care-combination-skin">
+                        <li>
+                            <a href="/collections/face-care-combination-skin">
          Combination Skin </a>
                         </li>
-                        <li><a href="/collections/face-care-oily">
+                        <li>
+                            <a href="/collections/face-care-oily">
          Oily Skin </a>
                         </li>
-                        <li><a href="/collections/face-care-eye-care">
+                        <li>
+                            <a href="/collections/face-care-eye-care">
          Eye Care </a>
                         </li>
                     </ul>
@@ -1870,34 +1959,44 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY CONCERN <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="/collections/face-care-aging-mature-skin">
+                        <li>
+                            <a href="/collections/face-care-aging-mature-skin">
          Aging: Wrinkles &amp; Fine Lines </a>
                         </li>
-                        <li><a href="/collections/face-care-dryness-dehydration">
+                        <li>
+                            <a href="/collections/face-care-dryness-dehydration">
          Dryness &amp; Dehydration </a>
                         </li>
-                        <li><a href="/collections/face-care-acne-and-impurities">
+                        <li>
+                            <a href="/collections/face-care-acne-and-impurities">
          Acne &amp; Impurities </a>
                         </li>
-                        <li><a href="/collections/face-care-blemishes-pigmentation">
+                        <li>
+                            <a href="/collections/face-care-blemishes-pigmentation">
          Blemishes &amp; Pigmentation </a>
                         </li>
-                        <li><a href="/collections/face-care-crows-feet-eye-wrinkles">
+                        <li>
+                            <a href="/collections/face-care-crows-feet-eye-wrinkles">
          Crow's Feet &amp; Eye Wrinkles </a>
                         </li>
-                        <li><a href="/collections/face-care-dark-under-eyes">
+                        <li>
+                            <a href="/collections/face-care-dark-under-eyes">
          Dark Under-Eyes </a>
                         </li>
-                        <li><a href="/collections/face-care-pores">
+                        <li>
+                            <a href="/collections/face-care-pores">
          Pores </a>
                         </li>
-                        <li><a href="/collections/face-care-dullness">
+                        <li>
+                            <a href="/collections/face-care-dullness">
          Dullness </a>
                         </li>
-                        <li><a href="/collections/face-care-excess-oil-1">
+                        <li>
+                            <a href="/collections/face-care-excess-oil-1">
          Excess Oil </a>
                         </li>
                     </ul>
@@ -1906,34 +2005,44 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY CATEGORY <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="/collections/face-care-oils-serums">
+                        <li>
+                            <a href="/collections/face-care-oils-serums">
          Oils and Serums </a>
                         </li>
-                        <li><a href="/collections/face-care-eye-care">
+                        <li>
+                            <a href="/collections/face-care-eye-care">
          Eye Care </a>
                         </li>
-                        <li><a href="/collections/face-care-cleansers">
+                        <li>
+                            <a href="/collections/face-care-cleansers">
          Cleansers </a>
                         </li>
-                        <li><a href="/collections/face-care-masks">
+                        <li>
+                            <a href="/collections/face-care-masks">
          Masks </a>
                         </li>
-                        <li><a href="/collections/face-care-scrubs">
+                        <li>
+                            <a href="/collections/face-care-scrubs">
          Scrubs &amp; Exfoliators </a>
                         </li>
-                        <li><a href="/collections/face-care-toners">
+                        <li>
+                            <a href="/collections/face-care-toners">
          Toners &amp; Mists </a>
                         </li>
-                        <li><a href="/collections/face-care-creams-concentrates">
+                        <li>
+                            <a href="/collections/face-care-creams-concentrates">
          Creams &amp; Concentrates </a>
                         </li>
-                        <li><a href="/collections/face-care-lip-care">
+                        <li>
+                            <a href="/collections/face-care-lip-care">
          Lip Care </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/face-care-massage-tools">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/face-care-massage-tools">
          Massage Tools </a>
                         </li>
                     </ul>
@@ -1942,10 +2051,12 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        HELP ME CHOOSE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
          Product Recommendation </a>
                         </li>
                     </ul>
@@ -1959,8 +2070,10 @@ for (var attr in meta) {
         <script data-section-id="sections--16464056811697__85a2ae73-2e9a-4181-991b-cb0b2b9b04cc" data-section-type="mega-menu-3" type="application/json">
    </script>
         <details>
-            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent"><span>
-      BODY </span><span class="icon-down-arrow"> </span>
+            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent">
+                <span>
+      BODY </span>
+                <span class="icon-down-arrow"> </span>
             </summary>
             <div class="mega-menu menu dropdown_content" data-meganav-desktop="" data-meganav-handle="body">
                 <div class="dropdown_column">
@@ -1968,21 +2081,26 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY CATEGORY </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/collections/body-care-moisturizing-oils">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/body-care-moisturizing-oils">
           Moisturizing Oils </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
           Natural Deodorant Replacement </a>
                             </li>
-                            <li><a href="/collections/body-care-foot-care">
+                            <li>
+                                <a href="/collections/body-care-foot-care">
           Foot Care </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/body-care-relaxation-massage-tools">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/body-care-relaxation-massage-tools">
           Massage Tools </a>
                             </li>
                         </ul>
@@ -1995,21 +2113,26 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY CONCERN </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="/collections/body-care-dryness-dehydration">
+                            <li>
+                                <a href="/collections/body-care-dryness-dehydration">
           Dryness &amp; Dehydration </a>
                             </li>
-                            <li><a href="/collections/body-care-dark-spots-blemishes">
+                            <li>
+                                <a href="/collections/body-care-dark-spots-blemishes">
           Dark Spots &amp; Blemishes </a>
                             </li>
-                            <li><a href="/collections/body-care-razor-burn">
+                            <li>
+                                <a href="/collections/body-care-razor-burn">
           Razor Burn </a>
                             </li>
-                            <li><a href="/collections/body-care-sensitivity">
+                            <li>
+                                <a href="/collections/body-care-sensitivity">
           Sensitivity </a>
                             </li>
                         </ul>
@@ -2022,12 +2145,14 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           HELP ME CHOOSE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
           Product Recommendation </a>
                             </li>
                         </ul>
@@ -2041,19 +2166,24 @@ for (var attr in meta) {
             <div data-meganav-handle="body" data-meganav-mobile="">
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY CATEGORY <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/collections/body-care-moisturizing-oils">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/body-care-moisturizing-oils">
          Moisturizing Oils </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
          Natural Deodorant Replacement </a>
                         </li>
-                        <li><a href="/collections/body-care-foot-care">
+                        <li>
+                            <a href="/collections/body-care-foot-care">
          Foot Care </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/body-care-relaxation-massage-tools">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/body-care-relaxation-massage-tools">
          Massage Tools </a>
                         </li>
                     </ul>
@@ -2062,19 +2192,24 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY CONCERN <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="/collections/body-care-dryness-dehydration">
+                        <li>
+                            <a href="/collections/body-care-dryness-dehydration">
          Dryness &amp; Dehydration </a>
                         </li>
-                        <li><a href="/collections/body-care-dark-spots-blemishes">
+                        <li>
+                            <a href="/collections/body-care-dark-spots-blemishes">
          Dark Spots &amp; Blemishes </a>
                         </li>
-                        <li><a href="/collections/body-care-razor-burn">
+                        <li>
+                            <a href="/collections/body-care-razor-burn">
          Razor Burn </a>
                         </li>
-                        <li><a href="/collections/body-care-sensitivity">
+                        <li>
+                            <a href="/collections/body-care-sensitivity">
          Sensitivity </a>
                         </li>
                     </ul>
@@ -2083,10 +2218,12 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        HELP ME CHOOSE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
          Product Recommendation </a>
                         </li>
                     </ul>
@@ -2100,8 +2237,10 @@ for (var attr in meta) {
         <script data-section-id="sections--16464056811697__51c12fce-174d-4bda-9a13-41ebf2bee342" data-section-type="mega-menu-4" type="application/json">
    </script>
         <details>
-            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent"><span>
-      HAIR </span><span class="icon-down-arrow"> </span>
+            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent">
+                <span>
+      HAIR </span>
+                <span class="icon-down-arrow"> </span>
             </summary>
             <div class="mega-menu menu dropdown_content" data-meganav-desktop="" data-meganav-handle="hair">
                 <div class="dropdown_column">
@@ -2109,21 +2248,26 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY HAIR TYPE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-dry-rough-hair">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-dry-rough-hair">
           Dry, Rough </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
           Thinning </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-limp-hair">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-limp-hair">
           Limp, Lifeless </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-volume">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-volume">
           No Volume </a>
                             </li>
                         </ul>
@@ -2136,21 +2280,26 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           SHOP BY CONCERN </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-volume">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-volume">
           Volume </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-hair-loss">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-hair-loss">
           Hair Loss </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
           Hair Thinning </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/collections/hair-care-dandruff">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/collections/hair-care-dandruff">
           Dandruff </a>
                             </li>
                         </ul>
@@ -2163,12 +2312,14 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           HELP ME CHOOSE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
           Product Recommendation </a>
                             </li>
                         </ul>
@@ -2182,19 +2333,24 @@ for (var attr in meta) {
             <div data-meganav-handle="hair" data-meganav-mobile="">
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY HAIR TYPE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-dry-rough-hair">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-dry-rough-hair">
          Dry, Rough </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
          Thinning </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-limp-hair">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-limp-hair">
          Limp, Lifeless </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-volume">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-volume">
          No Volume </a>
                         </li>
                     </ul>
@@ -2203,19 +2359,24 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        SHOP BY CONCERN <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-volume">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-volume">
          Volume </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-hair-loss">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-hair-loss">
          Hair Loss </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-thinning-hair">
          Hair Thinning </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/collections/hair-care-dandruff">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/collections/hair-care-dandruff">
          Dandruff </a>
                         </li>
                     </ul>
@@ -2224,10 +2385,12 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        HELP ME CHOOSE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
          Product Recommendation </a>
                         </li>
                     </ul>
@@ -2241,8 +2404,10 @@ for (var attr in meta) {
         <script data-section-id="sections--16464056811697__367cb78b-7fb6-4766-93b4-7f917ef0d780" data-section-type="mega-menu-5" type="application/json">
    </script>
         <details>
-            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent"><span>
-      BESTSELLERS </span><span class="icon-down-arrow"> </span>
+            <summary class="nav-desktop__tier-1-link nav-desktop__tier-1-link--parent">
+                <span>
+      BESTSELLERS </span>
+                <span class="icon-down-arrow"> </span>
             </summary>
             <div class="mega-menu menu dropdown_content" data-meganav-desktop="" data-meganav-handle="bestsellers">
                 <div class="dropdown_column">
@@ -2250,30 +2415,38 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           BESTSELLING FACE CARE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/pages/a-modernica-rufolia">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/a-modernica-rufolia">
           Rufolia Periorbital Eyemulsion </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/iyura-yauvari-amplified-youth-spring">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/iyura-yauvari-amplified-youth-spring">
           Yauvari Amplified Youth Spring </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/manjish-glow-elixir">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/manjish-glow-elixir">
           Manjish Glow Elixir </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/iyura-day-night">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/iyura-day-night">
           Day &amp; Night Face Oil Duo </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/ajara-sandalwood-rose-age-defying-eye-butter">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/ajara-sandalwood-rose-age-defying-eye-butter">
           Sandalwood Rose Eye Butter </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/kesaradi-oil-np">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/kesaradi-oil-np">
           Kesaradi Brightening Face Oil </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/ajara-incogniglow-youth-burst-duo">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/ajara-incogniglow-youth-burst-duo">
           IncogniGlow Youth Burst Duo </a>
                             </li>
                         </ul>
@@ -2286,18 +2459,22 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           BESTSELLING BODY CARE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/pages/balaayah-black-gram-body-booster">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/balaayah-black-gram-body-booster">
           Balaayah Black Gram Body Booster </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
           Mehfranz Eternally Fragrant Body Massage Oil </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/iyura-shamanri-young-energy-body-oil">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/iyura-shamanri-young-energy-body-oil">
           Shamanri Young Energy Body Oil </a>
                             </li>
                         </ul>
@@ -2310,15 +2487,18 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           BESTSELLING HAIR CARE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/pages/iyura-keranya-pure-black-seed-potent-hair-potion">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/iyura-keranya-pure-black-seed-potent-hair-potion">
           Keranya Pure Black Seed Potent Hair Potion </a>
                             </li>
-                            <li><a href="https://theayurvedaexperience.com/pages/iyura-ambhring-hair-oil-2019">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/iyura-ambhring-hair-oil-2019">
           Ambhring Age Embrace Revitalizer and Hair Oil </a>
                             </li>
                         </ul>
@@ -2331,12 +2511,14 @@ for (var attr in meta) {
 </div>
                     <div class="dropdown_column__menu">
                         <ul class="dropdown_title">
-                            <li><a>
+                            <li>
+                                <a>
           HELP ME CHOOSE </a>
                             </li>
                         </ul>
                         <ul>
-                            <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                            <li>
+                                <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
           Product Recommendation </a>
                             </li>
                         </ul>
@@ -2350,28 +2532,36 @@ for (var attr in meta) {
             <div data-meganav-handle="bestsellers" data-meganav-mobile="">
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        BESTSELLING FACE CARE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/pages/a-modernica-rufolia">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/a-modernica-rufolia">
          Rufolia Periorbital Eyemulsion </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/iyura-yauvari-amplified-youth-spring">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/iyura-yauvari-amplified-youth-spring">
          Yauvari Amplified Youth Spring </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/manjish-glow-elixir">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/manjish-glow-elixir">
          Manjish Glow Elixir </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/iyura-day-night">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/iyura-day-night">
          Day &amp; Night Face Oil Duo </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/ajara-sandalwood-rose-age-defying-eye-butter">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/ajara-sandalwood-rose-age-defying-eye-butter">
          Sandalwood Rose Eye Butter </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/kesaradi-oil-np">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/kesaradi-oil-np">
          Kesaradi Brightening Face Oil </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/ajara-incogniglow-youth-burst-duo">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/ajara-incogniglow-youth-burst-duo">
          IncogniGlow Youth Burst Duo </a>
                         </li>
                     </ul>
@@ -2380,16 +2570,20 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        BESTSELLING BODY CARE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/pages/balaayah-black-gram-body-booster">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/balaayah-black-gram-body-booster">
          Balaayah Black Gram Body Booster </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/iyura-mehfranz-eternally-fragrant-body-massage-oil">
          Mehfranz Eternally Fragrant Body Massage Oil </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/iyura-shamanri-young-energy-body-oil">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/iyura-shamanri-young-energy-body-oil">
          Shamanri Young Energy Body Oil </a>
                         </li>
                     </ul>
@@ -2398,13 +2592,16 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        BESTSELLING HAIR CARE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/pages/iyura-keranya-pure-black-seed-potent-hair-potion">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/iyura-keranya-pure-black-seed-potent-hair-potion">
          Keranya Pure Black Seed Potent Hair Potion </a>
                         </li>
-                        <li><a href="https://theayurvedaexperience.com/pages/iyura-ambhring-hair-oil-2019">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/iyura-ambhring-hair-oil-2019">
          Ambhring Age Embrace Revitalizer and Hair Oil </a>
                         </li>
                     </ul>
@@ -2413,10 +2610,12 @@ for (var attr in meta) {
 </li>
                 <li class="mobile-mega-menu_block mega-menu__richtext">
 </li>
-                <li class="mobile-mega-menu_block sublink"><a class="parent-link--false" data-no-instant="" href="">
+                <li class="mobile-mega-menu_block sublink">
+                    <a class="parent-link--false" data-no-instant="" href="">
        HELP ME CHOOSE <span class="right icon-down-arrow"> </span> </a>
                     <ul>
-                        <li><a href="https://theayurvedaexperience.com/pages/skincare-consultations">
+                        <li>
+                            <a href="https://theayurvedaexperience.com/pages/skincare-consultations">
          Product Recommendation </a>
                         </li>
                     </ul>
@@ -2937,7 +3136,7 @@ for (var attr in meta) {
                                             <p class="zp ts-regular-1 tsl-16"> <span class="zp tsl-17">
               📌Not feeling drowsy or sleepy or nauseous during the day. </span> </p>
                                             <p class="zp ts-regular-1 tsl-18"> <br/> </p>
-                                            <p class="zp ts-regular-1 tsl-19"> <span class="zp tsl-20">Seems like a distant reality, right?&nbsp;</span>  <span class="zp tsl-22">
+                                            <p class="zp ts-regular-1 tsl-19"> <span class="zp tsl-20">Seems like a distant reality, right?&nbsp;</span> <span class="zp tsl-22">
               Doesn’t have to be. </span> <span class="zp tsl-23">
               This can be YOUR reality TODAY. </span> </p>
                                             <p class="zp ts-regular-1 tsl-24"> <br/> </p>
@@ -3220,7 +3419,8 @@ for (var attr in meta) {
                                             <p class="zp ts-regular-1 tsl-5"> <span class="zp tsl-6">
               melatonin is that </span> </p>
                                         </div>
-                                        <div class="zp bsw-primary eat-16181761 zpa-el-button" data-id="16181761"><a class="zp ea-16181761 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15853940" role="button" target="_self">
+                                        <div class="zp bsw-primary eat-16181761 zpa-el-button" data-id="16181761">
+                                            <a class="zp ea-16181761 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15853940" role="button" target="_self">
              IT'S AN ACTUAL HORMONE!! </a>
                                         </div>
                                         <div class="zpa-word-wrap disable-internal-link zpa-el-text zp ea-15034735">
@@ -3452,7 +3652,8 @@ for (var attr in meta) {
                                             <p class="zp ts-regular-1 tsl-1"> <span class="zp tsl-2">
               Does any of this sound like something you’d want to take right before you sleep or at any other time of the day? </span> </p>
                                         </div>
-                                        <div class="zp bsw-primary eat-16181985 zpa-el-button" data-id="16181985"><a class="zp ea-16181985 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15828236" role="button" target="_self">
+                                        <div class="zp bsw-primary eat-16181985 zpa-el-button" data-id="16181985">
+                                            <a class="zp ea-16181985 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15828236" role="button" target="_self">
              ⚠️ PEOPLE OVER 45, ⚠️ </a>
                                         </div>
                                         <div class="zpa-word-wrap disable-internal-link zpa-el-text zp ea-16181972">
@@ -3576,7 +3777,8 @@ for (var attr in meta) {
                                                             <p class="zp ts-regular-1 tsl-1"> <span class="zp tsl-2">
                   If yes, then your sleep schedule and the amount of quality sleep you get needs a reset. </span> </p>
                                                         </div>
-                                                        <div class="zp bsw-primary eat-16466978 zpa-el-button" data-id="16466978"><a class="zp ea-16466978 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15866618" role="button" target="_self">
+                                                        <div class="zp bsw-primary eat-16466978 zpa-el-button" data-id="16466978">
+                                                            <a class="zp ea-16466978 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15866618" role="button" target="_self">
                  I AM READY FOR A SLEEP RESET </a>
                                                         </div>
                                                     </div>
@@ -4144,11 +4346,13 @@ for (var attr in meta) {
                                                     </div>
                                                     <div class="zp ea-16435766 zpa-price zpa-price--horizontal zpa-price--horizontal-sm zpa-price--horizontal-xs" data-price-element="">
                                                         <div class="hidden zpa-price__component" data-zp-product-price-wrapper="">
-                                                            <div class="zp erpw-16435766 zpa-el-price-retail"><span class="zpa-inline-block zp erp-16435766 zpa-border-style-none" data-zp-product-price=""> </span>
+                                                            <div class="zp erpw-16435766 zpa-el-price-retail">
+                                                                <span class="zpa-inline-block zp erp-16435766 zpa-border-style-none" data-zp-product-price=""> </span>
                                                             </div>
                                                         </div>
                                                         <div class="zpa-flex__wrap zpa-price__component" data-id="16435766">
-                                                            <div class="zp epw-16435766 zpa-el-price" data-id="16435766"><span class="zpa-inline-block zp ep-16435766 zpa-border-style-none" data-zp-product-discount-price=""> <span class="money"><p>
+                                                            <div class="zp epw-16435766 zpa-el-price" data-id="16435766">
+                                                                <span class="zpa-inline-block zp ep-16435766 zpa-border-style-none" data-zp-product-discount-price=""> <span class="money"><p>
                       $105.95 AUD/per bottle</p></span> </span>
                                                             </div>
                                                         </div>
@@ -4160,12 +4364,14 @@ for (var attr in meta) {
                                                     <div class="zp cwa-16435767 zpa-el-quantity zpa-flex" data-product-wrapper-id="16435752" data-zp-quantity-el="">
 </div>
                                                     <div class="zpa-product-wrapper zp bsw-primary eat-16435768 zpa-el-product-button" data-id="16435768">
-                                                        <button class="zpa-add-to-cart-btn zp ea-16435768 zpa-btn-custom bs-primary" data-zp-add-to-cart="" data-zp-link-type="cart" disabled="" name="add" type="submit"><span class="zpa-btn-custom__caption" data-zp-add-to-cart-text="">ORDER NOW</span>
+                                                        <button class="zpa-add-to-cart-btn zp ea-16435768 zpa-btn-custom bs-primary" data-zp-add-to-cart="" data-zp-link-type="cart" disabled="" name="add" type="submit">
+                                                            <span class="zpa-btn-custom__caption" data-zp-add-to-cart-text="">ORDER NOW</span>
                                                             <svg class="zpa-btn-loader zpa-btn-custom__icon" height="14px" width="14px">
                                                                 <use href="#buyButtonLoader">
 </use>
                                                             </svg>
-                                                            <div class="zpa-product-message__wrapper"><span class="zpa-product-message hidden zp product-success pcma-16435768" data-zp-product-messages=""> </span>
+                                                            <div class="zpa-product-message__wrapper">
+                                                                <span class="zpa-product-message hidden zp product-success pcma-16435768" data-zp-product-messages=""> </span>
                                                             </div>
                                                         </button>
                                                     </div>
@@ -4277,13 +4483,11 @@ for (var attr in meta) {
                                                 </div>
                                                 <div class="zp ea-16435777 zpa-price zpa-price--horizontal zpa-price--horizontal-sm zpa-price--horizontal-xs" data-price-element="">
                                                     <div class="zpa-price__component" data-zp-product-price-wrapper="">
-                                                        <div class="zp erpw-16435777 zpa-el-price-retail">
-                                                            <span class="zpa-inline-block zp erp-16435777 zpa-border-style-none" data-zp-product-price=""> <span class="money">$113.00</span> </span>
+                                                        <div class="zp erpw-16435777 zpa-el-price-retail"><span class="zpa-inline-block zp erp-16435777 zpa-border-style-none" data-zp-product-price=""> <span class="money">$113.00</span> </span>
                                                         </div>
                                                     </div>
                                                     <div class="zpa-flex__wrap zpa-price__component" data-id="16435777">
-                                                        <div class="zp epw-16435777 zpa-el-price" data-id="16435777">
-                                                            <span class="zpa-inline-block zp ep-16435777 zpa-border-style-none" data-zp-product-discount-price=""> <span class="money">$67.95&nbsp;AUD/per bottle<br><p></p></span> </span>
+                                                        <div class="zp epw-16435777 zpa-el-price" data-id="16435777"><span class="zpa-inline-block zp ep-16435777 zpa-border-style-none" data-zp-product-discount-price=""> <span class="money">$67.95&nbsp;AUD/per bottle<br><p></p></span> </span>
                                                         </div>
                                                     </div>
                                                     <div class="hidden zpa-price__component" data-zp-product-unit-price-wrapper="">
@@ -4292,14 +4496,12 @@ for (var attr in meta) {
                                                     </div>
                                                 </div>
                                                 <div class="zpa-product-wrapper zp bsw-primary eat-16435779 zpa-el-product-button" data-id="16435779">
-                                                    <button class="zpa-add-to-cart-btn zp ea-16435779 zpa-btn-custom bs-primary" data-zp-add-to-cart="" data-zp-link-type="cart" disabled="" name="add" type="submit">
-                                                        <span class="zpa-btn-custom__caption" data-zp-add-to-cart-text="">ORDER NOW</span>
+                                                    <button class="zpa-add-to-cart-btn zp ea-16435779 zpa-btn-custom bs-primary" data-zp-add-to-cart="" data-zp-link-type="cart" disabled="" name="add" type="submit"><span class="zpa-btn-custom__caption" data-zp-add-to-cart-text="">ORDER NOW</span>
                                                         <svg class="zpa-btn-loader zpa-btn-custom__icon" height="14px" width="14px">
                                                             <use href="#buyButtonLoader">
 </use>
                                                         </svg>
-                                                        <div class="zpa-product-message__wrapper">
-                                                            <span class="zpa-product-message hidden zp product-success pcma-16435779" data-zp-product-messages=""> </span>
+                                                        <div class="zpa-product-message__wrapper"><span class="zpa-product-message hidden zp product-success pcma-16435779" data-zp-product-messages=""> </span>
                                                         </div>
                                                     </button>
                                                 </div>
@@ -4643,7 +4845,8 @@ for (var attr in meta) {
                             <p class="zp ts-regular-1 tsl-8">
              Valerian balances the three doshas, most specifically, the Vata dosha to help you sleep with ease and wake up feeling refreshed and rejuvenated. It helps the body relax for a good night’s sleep, unhindered by any of the doshas. </p>
                         </div>
-                        <div class="zp bsw-primary eat-16219594 zpa-el-button" data-id="16219594"><a class="zp ea-16219594 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15869296" role="button" target="_self">
+                        <div class="zp bsw-primary eat-16219594 zpa-el-button" data-id="16219594">
+                            <a class="zp ea-16219594 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15869296" role="button" target="_self">
              BUY NATURAL  SLEEP GUMMIES </a>
                         </div>
                     </div>
@@ -5210,7 +5413,8 @@ for (var attr in meta) {
                             <p class="zp ts-regular-1 tsl-1">
              Sleep Gummies are Gluten Free. They do not contain any ingredients that are known allergens. However, please note that they are processed in a facility that handles soy, peanuts, tree nuts, milk, and wheat. Please read the ingredient list carefully before consuming if you have any known allergy. </p>
                         </div>
-                        <div class="zp bsw-primary eat-16466984 zpa-el-button" data-id="16466984"><a class="zp ea-16466984 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15869296" role="button" target="_self">
+                        <div class="zp bsw-primary eat-16466984 zpa-el-button" data-id="16466984">
+                            <a class="zp ea-16466984 zpa-btn-custom bs-primary" data-type="cluster_dest" href="#15869296" role="button" target="_self">
              I AM READY TO BUY </a>
                         </div>
                     </div>
@@ -5267,19 +5471,7 @@ for (var attr in meta) {
                 <div class="one-fourth column medium-down--one-whole">
 </div>
                 <div class="footer-social-icons--mobile sixteen columns">
-                    <ul class="social_icons">
-                        <li><a class="icon-email" href="mailto:care@theayurvedaexperience.com" title="Email The Ayurveda Experience"> </a>
-                        </li>
-                        <li><a class="icon-facebook" href="http://www.facebook.com/theayurvedaexperience" rel="me" target="_blank" title="The Ayurveda Experience on Facebook"> </a>
-                        </li>
-                        <li><a class="icon-instagram" href="https://www.instagram.com/theayurvedaexperience" rel="me" target="_blank" title="The Ayurveda Experience on Instagram"> </a>
-                        </li>
-                        <li><a class="icon-pinterest" href="https://in.pinterest.com/ayurvedaexp" rel="me" target="_blank" title="The Ayurveda Experience on Pinterest"> </a>
-                        </li>
-                        <li><a class="icon-youtube" href="https://www.youtube.com/channel/UCv51NcFKkxcl_L8aQgzK3hQ" rel="me" target="_blank" title="The Ayurveda Experience on YouTube"> </a>
-                        </li>
-                    </ul>
-                </div>
+</div>
                 <div class="one-whole column footer_credits">
                     <div class="footer-credits__top">
 </div>
@@ -5500,11 +5692,13 @@ for (var attr in meta) {
         <form action="/search" class="search-form search-form--mobile" data-autocomplete-false="">
             <div class="search-form__input-wrapper">
                 <input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="search-form__input" data-search-input="" name="q" placeholder="Search" spellcheck="false" type="text" value=""/>
-                <button aria-label="Search" class="search-form__submit-button global-button" type="submit"><span class="icon-search"> </span>
+                <button aria-label="Search" class="search-form__submit-button global-button" type="submit">
+                    <span class="icon-search"> </span>
                 </button>
             </div>
         </form>
-        <button aria-label="Close" class="mobile-search-close" data-mobile-search-close="" type="button"><span class="icon-cross"> </span>
+        <button aria-label="Close" class="mobile-search-close" data-mobile-search-close="" type="button">
+            <span class="icon-cross"> </span>
         </button>
     </div>
 </div>
@@ -7159,7 +7353,8 @@ window.paywhirlForShopify.settings = {
     <style>#gift_container, #gift_container .giftContainerContent, #smProductDetailGiftWrapper { all: unset; } #gift_container .giftContainerContent *, #smProductDetailGiftWrapper * { all: unset; } #sticky_gift_icon.stickyGartRight { right: 20px; bottom: 20px; } #sticky_gift_icon { position: fixed; bottom: 200px; right: 15px; z-index: 9999; cursor: pointer; } #sticky_gift_icon a { text-decoration: none; font-size: 20px; color: #34495e; } #sticky_gift_icon span { display: block; -webkit-border-radius: 40px; -moz-border-radius: 40px; border-radius: 40px; background-color: rgba(255,255,255,.9); -webkit-box-shadow: 1px 1px 5px grey; -moz-box-shadow: 1px 1px 5px grey; box-shadow: 1px 1px 5px grey; padding: 10px; width: 40px; height: 40px; margin: 0 auto; line-height: 40px !important; text-align: center; text-align: -moz-center; text-align: -webkit-center; position: relative; box-sizing: content-box !important; z-index: 1; } #sticky_gift_icon mark { -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; border: 2px solid #FFF; width: 20px; height: 20px; background-color: #FF6B6B; position: absolute; top: -5px; left: -10px; font-size: 10px; line-height: 20px; font-family: Roboto,sans-serif; color: #FFF; font-weight: 700; box-sizing: content-box !important; } #sticky_gift_icon svg.showGifts { height: 30px; width: 30px; margin-top: 3px; vertical-align: inherit; } #sticky_gift_icon svg.hideGifts { height: 25px; width: 25px; margin-top: 8px; display: none; vertical-align: inherit; } #gift_container { color: black; position: fixed; z-index: 9999999; bottom: 95px; right: 20px; max-height: 80%; overflow-y: scroll; overflow-x: hidden; -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px, rgb(0, 0, 0) 0px 5px 0px 0px inset !important; -moz-box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px, rgb(0, 0, 0) 0px 5px 0px 0px inset !important; box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px, rgb(0, 0, 0) 0px 5px 0px 0px inset !important; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; } #gift_container .giftContainerContent { float: right; background: white; width: 320px; position: relative; padding: 10px 10px 0px 10px; display: none; } #gift_container .giftContainerContent .giftWrapper { color: black; padding: 5px; margin: 0px 0px 10px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; position: relative; display: block; } #gift_container .giftContainerContent .orderGiftsTitle, #gift_container .giftContainerContent .productsToOfferGiftsTitle { text-align: center; padding: 5px; margin: 0 auto; font-weight: bold; display: block; border-bottom: 1px solid gray; width: 95%; } #gift_container .giftContainerContent ul { display: inline; } #gift_container .giftContainerContent li { padding: 10px 20px; display: block; } #gift_container .giftContainerContent li img { width: 22%; float: left; display: block; } #gift_container .giftContainerContent .smItems { width: 70%; display: block; float: left; margin-left: 5%; } #gift_container .giftContainerContent .giftWrapper a { display: inline; cursor: pointer; text-decoration: underline; } #gift_container.removeLinks .giftContainerContent .giftWrapper .smItems a, #gift_container.removeLinks .giftContainerContent .giftWrapper .alreadyInCartGiftTitle a { cursor: inherit; text-decoration: none; } #gift_container .giftContainerContent .smAddGiftToCart { padding: 4px 10px; margin-top: 4px; background: rgba(168, 168, 168, 0.46) none repeat scroll 0% 0%; border-radius: 2px; position: relative; display: block; font-weight: bold; cursor: pointer; } #gift_container .giftContainerContent .giftAlreadyInCart, #gift_container .giftContainerContent .giftLineAlreadyInCart { padding: 5px 20px; display: block; text-align: center; } #gift_container .giftContainerContent .giftAlreadyInCart a, #gift_container .giftContainerContent .giftLineAlreadyInCart a { font-weight: bold; } #gift_container .giftContainerContent .removeFromCart { display: block; margin-top: 10px; cursor: pointer; text-decoration: underline; } #gift_container .giftContainerContent .giftAlreadyInCart img { width: 22%; float: left; display: block; } #gift_container .giftContainerContent .item-variants select { display: block; color: #444; padding: .3em 1.0em .3em .3em; width: 100%; max-width: 100%; box-sizing: border-box; margin-top: 2px; border: 1px solid #aaa; -moz-border-radius: .2em; -webkit-border-radius: .2em; border-radius: .2em; -moz-appearance: none; -webkit-appearance: none; appearance: none; background-color: #fff; background-image: url('data:image/svg+xml;charset=US-ASCII,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="292.362px" height="292.362px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"	 xml:space="preserve"><g>	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); background-repeat: no-repeat, repeat; background-position: right .7em top 50%, 0 0; background-size: .65em auto, 100%; } #gift_container .giftContainerContent .item-variants select::-ms-expand { display: none; } #gift_container .giftContainerContent .item-variants select:hover { border-color: #888; } #gift_container .giftContainerContent .item-variants select:focus { border-color: #aaa; -moz-box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7); -webkit-box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7); box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7); -moz-box-shadow: 0 0 0 3px -moz-mac-focusring; -webkit-box-shadow: 0 0 0 3px -moz-mac-focusring; box-shadow: 0 0 0 3px -moz-mac-focusring; color: #222; outline: none; } #gift_container .giftContainerContent .item-variants select option { font-weight: normal; } *[dir="rtl"] #gift_container .giftContainerContent .item-variants select, :root:lang(ar) #gift_container .giftContainerContent .item-variants select, :root:lang(iw) #gift_container .giftContainerContent .item-variants select { background-position: left .7em top 50%, 0 0; padding: .6em .8em .5em 1.4em; } #gift_container .giftContainerContent .item-variants select:disabled, #gift_container .giftContainerContent .item-variants select[aria-disabled=true] { color: graytext; background-image: url('data:image/svg+xml;charset=US-ASCII,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="292.362px" height="292.362px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"	 xml:space="preserve"><g>	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>'),linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); } #gift_container .giftContainerContent .item-variants select:disabled:hover, #gift_container .giftContainerContent .item-variants select[aria-disabled=true] { border-color: #aaa; } #gift_container .giftContainerContent:after { bottom: 100%; left: 89%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-bottom-color: white; border-width: 8px; margin-left: -8px; } #gift_container .button { background: #6394F8; color: white; text-align: center; padding: 12px; text-decoration: none; display: block; border-radius: 3px; font-size: 16px; margin: 25px 0 15px 0; } #gift_container .button:hover { background: #729ef9; } #gift_container .clearfix:after { content: ""; display: table; clear: both; } #gift_container #overlaySection { display: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: white; opacity: 0.6; z-index: 99; } #smProductDetailGiftWrapper { position: relative; font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #000; padding: 10px; margin: 20px 0px 50px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px,rgba(0, 0, 0, 0.1) 0px 1px 1px 1px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px,rgba(0, 0, 0, 0.1) 0px 1px 1px 1px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px,rgba(0, 0, 0, 0.1) 0px 1px 1px 1px; display: block; clear: both; } #smProductDetailGiftWrapper.alreadyInCart { border: 1px solid #00800070; background: rgb(245, 251, 244); } #smProductDetailGiftWrapper .alreadyInCartProductTitle { display: block; text-align: center; } #smProductDetailGiftWrapper .alreadyInCartProductTitle a { cursor: pointer; text-decoration: underline; font-weight: bold; } #smProductDetailGiftMainWrapper.removeLinks .alreadyInCartProductTitle a { cursor: inherit; text-decoration: none; } #smProductDetailGiftWrapper .removeFromCart { display: block; text-align: center; margin-top: 20px; cursor: pointer; text-decoration: underline; } #smProductDetailGiftWrapper li { padding: 10px 20px; display: inline-block; } #smProductDetailGiftWrapper li img { width: 22%; float: left; display: block; } #smProductDetailGiftWrapper .smItems { width: 70%; display: block; float: left; margin-left: 5%; } #smProductDetailGiftWrapper .giftWrapper a, #smProductDetailGiftWrapper .giftLineAlreadyInCart a { display: inline; cursor: pointer; } #smProductDetailGiftWrapper .item-variants select { display: block; color: #444; padding: .5em 1.0em .3em .3em; width: 100%; max-width: 100%; box-sizing: border-box; margin-top: 6px; border: 1px solid #aaa; -moz-border-radius: .2em; -webkit-border-radius: .2em; border-radius: .2em; -moz-appearance: none; -webkit-appearance: none; appearance: none; background-color: #fff; background-image: url('data:image/svg+xml;charset=US-ASCII,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="292.362px" height="292.362px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;" xml:space="preserve"><g> <path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424 C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428 s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>'), linear-gradient(to bottom,#ffffff 0%,#e5e5e5 100%); background-repeat: no-repeat, repeat; background-position: right .7em top 50%, 0 0; background-size: .65em auto, 100%; text-align: left; } #smProductDetailGiftWrapper .item-name { display: block; cursor: pointer; text-decoration: underline; text-align: left; } #smProductDetailGiftMainWrapper.removeLinks .item-name, #smProductDetailGiftMainWrapper.removeLinks .alreadyInCartGiftTitle a, #smProductDetailGiftWrapper.removeLinks .item-name { cursor: inherit; text-decoration: none; } #smProductDetailGiftMainWrapper li.isInCart { padding: 10px 5px !important; } #smProductDetailGiftMainWrapper li.isInCart .giftLineAlreadyInCart img { margin-right: 15px !important; } #smProductDetailGiftWrapper .item-variants select option { font-weight: normal; } #smProductDetailGiftWrapper .smAddGiftToCart { padding: 8px 8px; margin-top: 6px; background: rgba(168, 168, 168, 0.46) none repeat scroll 0% 0%; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; position: relative; display: block; font-weight: bold; cursor: pointer; } #smProductDetailGiftWrapper .giftLineAlreadyInCart { padding: 15px !important; display: block; text-align: center; } #smProductDetailGiftWrapper .giftLineAlreadyInCart a { font-weight: bold; } #smProductDetailGiftWrapper .removeFromCart { display: block; margin-top: 10px; cursor: pointer; text-decoration: underline; } #smProductDetailGiftWrapper .productsToOfferGiftsTitle { text-align: center; padding: 5px; margin: 0 auto; font-weight: bold; display: block; border-bottom: 1px solid gray; width: 95%; margin-bottom: 20px; line-height: 20px; } #smProductDetailGiftWrapper .productsToOfferGiftsTitle a { cursor: pointer; text-decoration: underline; } #gift_container  .offerGiftsUntilDate, #smProductDetailGiftWrapper .offerGiftsUntilDate { display: block; margin-top: 5px; text-align: center; border-top: 1px solid black; padding: 10px; } #gift_container  .offerGiftsUntilDateIcon, #smProductDetailGiftWrapper .offerGiftsUntilDateIcon { padding: 0 1.0em .3em .3em; background-color: #fff; background-image: url('data:image/svg+xml;charset=US-ASCII,<svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m482 292.25v-246.25c0-8.285156-6.714844-15-15-15h-76v-16c0-8.285156-6.714844-15-15-15s-15 6.714844-15 15v16h-60v-16c0-8.285156-6.714844-15-15-15s-15 6.714844-15 15v16h-60v-16c0-8.285156-6.714844-15-15-15s-15 6.714844-15 15v16h-60v-16c0-8.285156-6.714844-15-15-15s-15 6.714844-15 15v16h-76c-8.285156 0-15 6.714844-15 15v391c0 8.285156 6.714844 15 15 15h249.804688c24.25 36.152344 65.488281 60 112.195312 60 74.4375 0 135-60.5625 135-135 0-32.070312-11.25-61.5625-30-84.75zm-391-231.25v15c0 8.285156 6.714844 15 15 15s15-6.714844 15-15v-15h60v15c0 8.285156 6.714844 15 15 15s15-6.714844 15-15v-15h60v15c0 8.285156 6.714844 15 15 15s15-6.714844 15-15v-15h60v15c0 8.285156 6.714844 15 15 15s15-6.714844 15-15v-15h61v60h-422v-60zm-61 361v-271h422v113.804688c-21.464844-14.394532-47.269531-22.804688-75-22.804688-47.398438 0-89.164062 24.558594-113.257812 61.613281-2.027344-1.023437-4.3125-1.613281-6.742188-1.613281h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h22.722656c-3.386718 9.554688-5.730468 19.601562-6.882812 30h-15.839844c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h15.839844c1.152344 10.398438 3.492187 20.445312 6.882812 30zm347 60c-57.898438 0-105-47.101562-105-105s47.101562-105 105-105 105 47.101562 105 105-47.101562 105-105 105zm0 0"/><path d="m437 362h-45v-45c0-8.285156-6.714844-15-15-15s-15 6.714844-15 15v60c0 8.285156 6.714844 15 15 15h60c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0"/><path d="m136 182h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h30c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0"/><path d="m136 242h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h30c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0"/><path d="m136 302h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h30c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0"/><path d="m227 212h30c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15zm0 0"/><path d="m227 272h30c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15zm0 0"/><path d="m136 362h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h30c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0"/><path d="m347 212h30c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-30c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15zm0 0"/></svg>'); background-repeat: no-repeat, repeat; background-size: 16px auto; } .productGiftIcon { position: absolute !important; top: 10px !important; right: 10px !important; width: 15% !important; z-index: 1 !important; height: 15% !important; left: auto !important; } .svgTextValue { display: inline-block; position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 0; right: 0; margin: auto; text-align: center; color: black; } .smGiftInCartVariants { display: block; margin-top: 5px; color: #444; padding: .3em 1.0em .3em .3em; box-sizing: border-box; border: 1px solid #aaa; background-color: #fff; } #smProductDetailGiftMainWrapper .item-original-price { margin-top: 5px; } #smProductDetailGiftWrapper .item-original-price { margin-top: 5px; }</style>
     <!-- END app snippet -->
     <!-- BEGIN app snippet: gift-box -->
-    <div class="stickyGartRight" id="sticky_gift_icon" style="display:none"><span style="background-size: 30px;background-repeat: no-repeat;background-position: center; background-color:#ffffff"> <svg class="showGifts" id="Capa_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+    <div class="stickyGartRight" id="sticky_gift_icon" style="display:none">
+        <span style="background-size: 30px;background-repeat: no-repeat;background-position: center; background-color:#ffffff"> <svg class="showGifts" id="Capa_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
                 <g>
                     <g>
                         <path d="M32,271.692v192c0,17.664,14.368,32,32,32h160v-224H32z">
