@@ -150,7 +150,7 @@ h1.h1-title {
 .image-container {
     float: left; /* ÃÅ¾ÃÂ±Ã‘â€šÃÂµÃÂºÃÂ°ÃÂ½ÃÂ¸ÃÂµ ÃÂ±ÃÂ»ÃÂ¾ÃÂºÃÂ° Ã‘Â ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸ÃÂµÃÂ¼ Ã‘ÂÃÂ»ÃÂµÃÂ²ÃÂ° */
     width: 300px;
-    margin-right: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ’ÃÂ¿ ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ’ ÃÂ±ÃÂ»ÃÂ¾ÃÂºÃÂ¾ÃÂ¼ ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â ÃÂ¸ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ¾ÃÂ¼ */
+    margin-right: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ' ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ' ÃÂ±ÃÂ»ÃÂ¾ÃÂºÃÂ¾ÃÂ¼ ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â ÃÂ¸ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ¾ÃÂ¼ */
     margin-bottom: 20px;
     text-align: center; /* ÃÂ¦ÃÂµÃÂ½Ã‘â€šÃ‘â‚¬ÃÂ¸Ã‘â‚¬ÃÂ¾ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂµ ÃÂ½ÃÂ°ÃÂ·ÃÂ²ÃÂ°ÃÂ½ÃÂ¸Ã‘Â Ã‘â€žÃÂ¾Ã‘â€šÃÂ¾ */
 }
@@ -158,7 +158,7 @@ h1.h1-title {
 .image-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* ÃÂ¡ÃÂºÃ‘â‚¬Ã‘Æ’ÃÂ³ÃÂ»ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘Æ’ÃÂ³ÃÂ»ÃÂ¾ÃÂ² ÃÂ´ÃÂ»Ã‘Â ÃÂºÃ‘â‚¬ÃÂ°Ã‘ÂÃÂ¾Ã‘â€šÃ‘â€¹ */
+    border-radius: 8px; /* ÃÂ¡ÃÂºÃ‘â‚¬Ã‘Æ'ÃÂ³ÃÂ»ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘Æ'ÃÂ³ÃÂ»ÃÂ¾ÃÂ² ÃÂ´ÃÂ»Ã‘Â ÃÂºÃ‘â‚¬ÃÂ°Ã‘ÂÃÂ¾Ã‘â€šÃ‘â€¹ */
 }
 
 .content .image-container p {
@@ -176,7 +176,7 @@ h1.h1-title {
 .image-right {
     float: right; /* ÃËœÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘ÂÃÂ¿Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ° */
     width: 300px;
-    margin-left: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ’ÃÂ¿ Ã‘ÂÃÂ»ÃÂµÃÂ²ÃÂ° ÃÂ¾Ã‘â€š ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â */
+    margin-left: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ' Ã‘ÂÃÂ»ÃÂµÃÂ²ÃÂ° ÃÂ¾Ã‘â€š ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â */
     margin-bottom: 20px;
     text-align: center;
     margin-top: 20px;
@@ -184,7 +184,7 @@ h1.h1-title {
 .image-left {
     float: left; /* ÃËœÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘ÂÃÂ»ÃÂµÃÂ²ÃÂ° */
     width: 300px;
-    margin-right: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ’ÃÂ¿ Ã‘ÂÃÂ¿Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ° ÃÂ¾Ã‘â€š ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â */
+    margin-right: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ' Ã‘ÂÃÂ¿Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ° ÃÂ¾Ã‘â€š ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â */
     margin-bottom: 20px;
     text-align: center;
     margin-top: 20px;
@@ -339,7 +339,7 @@ h3.article-finish {color: #999;text-align: center;font-family: "Figtree", sans-s
 .product-list {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ’ÃÂ¿ ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ’ Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ¾ÃÂºÃÂ°ÃÂ¼ÃÂ¸ */
+    gap: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ' ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ' Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ¾ÃÂºÃÂ°ÃÂ¼ÃÂ¸ */
     margin-top: 20px;
     width: 600px;
 }
@@ -358,8 +358,8 @@ h3.article-finish {color: #999;text-align: center;font-family: "Figtree", sans-s
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 8px; /* ÃÂ¡ÃÂºÃ‘â‚¬Ã‘Æ’ÃÂ³ÃÂ»ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘Æ’ÃÂ³ÃÂ»ÃÂ¾ÃÂ² ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â */
-    margin-right: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ’ÃÂ¿ ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ’ ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸ÃÂµÃÂ¼ ÃÂ¸ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ¾ÃÂ¼ */
+    border-radius: 8px; /* ÃÂ¡ÃÂºÃ‘â‚¬Ã‘Æ'ÃÂ³ÃÂ»ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘Æ'ÃÂ³ÃÂ»ÃÂ¾ÃÂ² ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸Ã‘Â */
+    margin-right: 20px; /* ÃÅ¾Ã‘â€šÃ‘ÂÃ‘â€šÃ‘Æ' ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ' ÃÂ¸ÃÂ·ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂ°ÃÂ¶ÃÂµÃÂ½ÃÂ¸ÃÂµÃÂ¼ ÃÂ¸ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ¾ÃÂ¼ */
 }
 
 .product-item .description {
@@ -490,7 +490,7 @@ ul.article-sobrepeso li p span.art-title {
 
 .form-wrapper {
     background: #faffee;
-    padding: 20px 20px;
+    padding: 10px;
 }
 
 p.p-border {
@@ -522,6 +522,7 @@ h1.form-right-title {
     font-size: 26px;
     font-weight: 800;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 h1.form-right-title span {
@@ -530,7 +531,7 @@ h1.form-right-title span {
 
 .form {
     width: 900px;
-    margin: 20px auto 20px;
+    margin: 10px auto;
     display: flex;
     font-family: "Figtree", sans-serif;
     border: 1px dashed #000;
@@ -553,9 +554,7 @@ h1.form-right-title span {
 .form-right {
     width: 50%;
     float: left;
-    padding: 20px 30px;
-    
-     /* Ð“Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð²Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ */
+    padding: 15px 20px;
 }
 
 .form input {
@@ -741,7 +740,7 @@ h2.form-title-h2 span {
 p.timer {
     text-align: center;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 35px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -927,45 +926,43 @@ p.formp1 {
 p.formp2 {
     text-align: center;
     font-size: 16px;
-    margin-bottom: 0;
-    font-weight: 700;
+    margin-bottom: 25px;
 }
 p.formdown {
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 2px;
+    margin-top: 25px;
 }
 .form-right a {
+    width: 60%;  /* 再减小一点宽度 */
+    margin: 15px auto;
+    display: block;
+    background: #E31E24;
     color: #fff;
     font-family: "Figtree", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    width: 100%;
-    background: #007BFF;
-    border-width: 0px;
-    border-style: initial;
-    border-color: initial;
-    border-image: initial;
-    padding: 16px 25px 12px;
-    border-radius: 10px;
-    margin-top: 15px;
-    display: inline-block;
+    padding: 15px 15px 15px 25px;  /* 增加左内边距，减小右内边距 */
+    border-radius: 15px;
     text-align: center;
     text-transform: uppercase;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(227, 30, 36, 0.2);
+    text-decoration: underline;
 }
-.form-right a img {
-    width: 15px;
-    margin-left: 10px;
+
+.form-right a:after {
+    content: " →";
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 20px;
     position: relative;
-    top: -2px;
+    top: 1px;
 }
+
 .form-right a:hover {
-    background: #5498e1;
+    background: #c41116;
     color: #fff;
     transition: 0.3s ease;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .symptoms {background: #fff0f0;padding: 20px;margin-bottom: 20px;margin-top: 20px;position: relative;}
@@ -1360,7 +1357,7 @@ ul.footer-links li a {
 
 .footer-link {
     text-align: center;
-    margin: 0 0 35px;
+    margin: 35px 0;  /* 修改上下外边距为35px */
 }
 
 .footer-link a {
@@ -1368,31 +1365,31 @@ ul.footer-links li a {
     font-family: "Figtree", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    width: 400px;
-    background: #007BFF;
+    width: 250px;
+    background: #E31E24;
     border-width: 0px;
     border-style: initial;
     border-color: initial;
     border-image: initial;
     padding: 15px 25px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 0;  /* 移除顶部外边距，因为已经在父元素设置了 */
     display: inline-block;
     text-transform: uppercase;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(227, 30, 36, 0.2);
+    text-decoration: underline;
 }
 
 .footer-link a:hover {
-    background: #5498e1;
+    background: #c41116;
     color: #fff;
     transition: 0.3s ease;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .footer-link a img {
     width: 15px;
-    margin-left: 10px;
+    margin-left: 8px;
     position: relative;
     top: -2px;
 }
