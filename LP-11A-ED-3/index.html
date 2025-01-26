@@ -37,11 +37,10 @@
     }
     /* 评论区头像样式优化 */
     .body-reviews-flex .lefto {
-      width: 48px !important;
-      height: 48px !important;
-      border-radius: 50% !important;
-      object-fit: cover !important;
-      aspect-ratio: 1/1 !important;
+      width: auto !important;  /* 移除固定宽度 */
+      height: auto !important; /* 移除固定高度 */
+      display: block !important;
+      margin: 0 !important;
     }
 
     /* 评论区布局响应式优化 */
@@ -53,19 +52,26 @@
       }
 
       .body-reviews-first {
-        flex: 0 0 48px !important;
-        margin-bottom: 0 !important;
+        flex: 0 0 auto !important; /* 让容器适应内容大小 */
+        width: auto !important;
+        min-width: auto !important;
+        margin: 0 !important;
       }
 
       .body-reviews-second {
         flex: 1 !important;
+        padding-left: 15px !important;
+        width: auto !important; /* 移除固定计算宽度 */
       }
 
-      /* 确保图片容器不会被拉伸 */
+      /* 移除图片容器的固定大小 */
       .rel {
-        width: 48px !important;
-        height: 48px !important;
+        width: auto !important;
+        height: auto !important;
         position: relative !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
       }
     }
   </style>
@@ -200,11 +206,10 @@
 
         /* 修复评论区头像样式 */
         .body-reviews-first img.lefto {
-          width: 48px !important;
-          height: 48px !important;
-          border-radius: 50% !important;
-          object-fit: cover !important; /* 保持图片比例 */
-          aspect-ratio: 1/1 !important; /* 强制1:1比例 */
+          width: auto !important;  /* 移除固定宽度 */
+          height: auto !important; /* 移除固定高度 */
+          display: block !important;
+          margin: 0 !important;
         }
 
         /* 调整评论布局 */
@@ -215,19 +220,26 @@
         }
 
         .body-reviews-first {
-          flex: 0 0 48px !important; /* 固定宽度 */
-          margin-bottom: 0 !important;
+          flex: 0 0 auto !important; /* 让容器适应内容大小 */
+          width: auto !important;
+          min-width: auto !important;
+          margin: 0 !important;
         }
 
         .body-reviews-second {
           flex: 1 !important;
+          padding-left: 15px !important;
+          width: auto !important; /* 移除固定计算宽度 */
         }
 
-        /* 确保图片容器不会被拉伸 */
+        /* 移除图片容器的固定大小 */
         .rel {
-          width: 48px !important;
-          height: 48px !important;
+          width: auto !important;
+          height: auto !important;
           position: relative !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          display: block !important;
         }
       }
 
@@ -915,7 +927,7 @@
               
               <!-- 单条评论样式 -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava1.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava1.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold; font-size: 16px;">Samuel Carter</div>
@@ -941,7 +953,7 @@
 
               <!-- 第2条评论 -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava2.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava2.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Michael S</div>
@@ -966,7 +978,7 @@
 
               <!-- 第3条评论 -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava3.png" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava3.png" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">David Wilson</div>
@@ -991,7 +1003,7 @@
 
               <!-- 第4-6条评论 (日期-1天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava4.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava4.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Robert</div>
@@ -1016,7 +1028,7 @@
 
               <!-- 第5-7条评论 (日期-1天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava5.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava5.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">James D.</div>
@@ -1041,7 +1053,7 @@
 
               <!-- 第6条评论 (日期-1天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava6.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava6.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Thomas Anderson</div>
@@ -1066,7 +1078,7 @@
 
               <!-- 第7-9条评论 (日期-2天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava7.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava7.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Richard Davis</div>
@@ -1091,7 +1103,7 @@
 
               <!-- 第8条评论 (日期-2天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava8.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava8.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Charles Martin</div>
@@ -1116,7 +1128,7 @@
 
               <!-- 第9-11条评论 (日期-3天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava9.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava9.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Edward Brown</div>
@@ -1141,7 +1153,7 @@
 
               <!-- 第10条评论 -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava10.png" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava10.png" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Steven Clark</div>
@@ -1166,7 +1178,7 @@
 
               <!-- 第11条评论 -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava11.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava11.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Kevin Anderson</div>
@@ -1191,7 +1203,7 @@
 
               <!-- 第12条评论 (日期-3天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava12.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava12.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">William Parker</div>
@@ -1216,7 +1228,7 @@
 
               <!-- 第13-15条评论 (日期-4天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava13.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava13.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">George Miller</div>
@@ -1241,7 +1253,7 @@
 
               <!-- 第14条评论 (日期-4天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava14.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava14.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Daniel W.</div>
@@ -1266,7 +1278,7 @@
 
               <!-- 第15-17条评论 (日期-5天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava15.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava15.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Paul Harris</div>
@@ -1291,7 +1303,7 @@
 
               <!-- 第16条评论 (日期-5天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava16.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava16.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Mark Thompson</div>
@@ -1316,7 +1328,7 @@
 
               <!-- 第17-19条评论 (日期-5天) -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava17.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava17.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">John D.</div>
@@ -1341,7 +1353,7 @@
 
               <!-- 第18条评论 -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava18.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava18.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Brian Clark</div>
@@ -1366,7 +1378,7 @@
 
               <!-- 第19条评论 -->
               <div style="display: flex; gap: 15px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-                <img src="./IT WORKS!_files/ava19.jpg" alt="User Avatar" style="width: 48px; height: 48px; border-radius: 50%;">
+                <img src="./IT WORKS!_files/ava19.jpg" alt="User Avatar" style="width: 70px; height: 70px;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                     <div style="font-weight: bold;font-size: 16px">Peter Wright</div>
