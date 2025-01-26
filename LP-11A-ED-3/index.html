@@ -164,6 +164,38 @@
           margin: 0 !important;
           padding: 20px !important;
         }
+
+        /* 修复评论区头像样式 */
+        .body-reviews-first img.lefto {
+          width: 48px !important;
+          height: 48px !important;
+          border-radius: 50% !important;
+          object-fit: cover !important; /* 保持图片比例 */
+          aspect-ratio: 1/1 !important; /* 强制1:1比例 */
+        }
+
+        /* 调整评论布局 */
+        .body-reviews-flex {
+          flex-direction: row !important; /* 保持水平布局 */
+          align-items: flex-start !important;
+          gap: 15px !important;
+        }
+
+        .body-reviews-first {
+          flex: 0 0 48px !important; /* 固定宽度 */
+          margin-bottom: 0 !important;
+        }
+
+        .body-reviews-second {
+          flex: 1 !important;
+        }
+
+        /* 确保图片容器不会被拉伸 */
+        .rel {
+          width: 48px !important;
+          height: 48px !important;
+          position: relative !important;
+        }
       }
 
       /* 更小屏幕的额外优化 */
