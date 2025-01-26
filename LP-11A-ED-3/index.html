@@ -80,6 +80,113 @@
 
     <!-- 在head部分添加Lato字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      /* 在head部分添加以下响应式样式 */
+      @media screen and (max-width: 767px) {
+        /* 标题响应式 */
+        .longform-hed {
+          font-size: 32px !important; /* 减小移动端标题字体 */
+          line-height: 1.2 !important;
+          padding: 0 15px !important;
+        }
+        
+        /* 副标题响应式 */
+        .longform-header-headings p {
+          font-size: 20px !important;
+          line-height: 1.4 !important;
+          padding: 0 15px !important;
+        }
+
+        /* 导航栏响应式 */
+        .nav-bar-container {
+          flex-direction: column !important;
+          padding: 10px !important;
+        }
+
+        .nav-bar-container > div {
+          display: none !important; /* 隐藏导航链接 */
+        }
+
+        /* 内容区域响应式 */
+        .content-container {
+          padding: 0 15px !important;
+        }
+
+        .body-text {
+          font-size: 16px !important;
+          line-height: 1.5 !important;
+          padding: 0 !important;
+        }
+
+        /* 评论区响应式 */
+        .body-reviews-flex {
+          flex-direction: column !important;
+        }
+
+        .body-reviews-first {
+          width: 100% !important;
+          margin-bottom: 15px !important;
+        }
+
+        .body-reviews-second {
+          width: 100% !important;
+        }
+
+        /* 图表响应式 */
+        .graph {
+          margin: 15px 0 !important;
+        }
+
+        .beforetxt, .txt {
+          width: 100% !important;
+          margin-bottom: 10px !important;
+        }
+
+        /* 订单区域响应式 */
+        .guarantee-section {
+          padding: 20px !important;
+        }
+
+        #ssbutton {
+          width: 100% !important;
+          margin: 10px 0 !important;
+        }
+
+        /* 修复图片溢出问题 */
+        img {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+
+        /* 修复内容边距问题 */
+        div[style*="margin: 0 -100vw"] {
+          margin: 0 !important;
+          padding: 20px !important;
+        }
+      }
+
+      /* 更小屏幕的额外优化 */
+      @media screen and (max-width: 480px) {
+        .longform-hed {
+          font-size: 28px !important;
+        }
+
+        .longform-header-headings p {
+          font-size: 18px !important;
+        }
+
+        .body-text {
+          font-size: 15px !important;
+        }
+
+        /* 调整按钮大小 */
+        #ssbutton {
+          font-size: 16px !important;
+          padding: 10px 20px !important;
+        }
+      }
+    </style>
 </head>
 
 <body class="locale-en no-tab standard-article" data-link="click.php" style="background-color: white !important;">
