@@ -68,6 +68,177 @@
         position: relative !important;
       }
     }
+
+    /* 评论区全局样式 */
+    .body-reviews-flex {
+      display: flex !important;
+      gap: 15px !important;
+      align-items: flex-start !important;
+      width: 100% !important;
+    }
+
+    /* 头像容器样式 */
+    .body-reviews-first {
+      flex: 0 0 48px !important;
+      width: 48px !important;
+      min-width: 48px !important;
+      margin: 0 !important;
+    }
+
+    /* 头像图片样式 */
+    .body-reviews-flex .lefto,
+    .body-reviews-first img.lefto {
+      width: 48px !important;
+      height: 48px !important;
+      border-radius: 50% !important;
+      object-fit: cover !important;
+      display: block !important;
+      margin: 0 !important;
+    }
+
+    /* 评论内容区域样式 */
+    .body-reviews-second {
+      flex: 1 !important;
+      min-width: 0 !important; /* 防止内容溢出 */
+    }
+
+    /* 图片容器样式 */
+    .rel {
+      width: 48px !important;
+      height: 48px !important;
+      position: relative !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      display: block !important;
+    }
+
+    /* 移动端特定优化 */
+    @media screen and (max-width: 767px) {
+      .body-blockquote.body-reviews {
+        padding: 15px !important;
+        margin: 15px 0 !important;
+      }
+      
+      .body-reviews-flex {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+      }
+      
+      .body-reviews-first,
+      .body-reviews-first .rel,
+      .body-reviews-first img.lefto {
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        max-width: 48px !important;
+      }
+      
+      .body-reviews-second {
+        padding-left: 15px !important;
+        width: calc(100% - 63px) !important; /* 48px头像 + 15px间距 */
+      }
+    }
+
+    /* 按钮响应式样式 */
+    @media screen and (max-width: 767px) {
+      #ssbutton {
+        padding: 10px 20px !important;
+        height: 40px !important;
+        font-size: 16px !important;
+      }
+      
+      #ssbutton span {
+        font-size: 14px !important;
+        white-space: nowrap !important;
+      }
+    }
+
+    /* 更小屏幕的额外优化 */
+    @media screen and (max-width: 480px) {
+      #ssbutton {
+        padding: 8px 15px !important;
+        height: 36px !important;
+      }
+      
+      #ssbutton span {
+        font-size: 13px !important;
+      }
+    }
+
+    /* Guarantee部分的响应式样式 */
+    @media screen and (max-width: 767px) {
+      .guarantee-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 20px !important;
+      }
+
+      .guarantee-logo {
+        padding-right: 0 !important;
+        margin-bottom: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+      }
+
+      .guarantee-logo img {
+        margin: 0 auto !important;
+        display: block !important;
+      }
+
+      .guarantee-divider {
+        display: none !important;
+      }
+
+      .guarantee-text {
+        text-align: center !important;
+        width: 100% !important;
+      }
+
+      .guarantee-text h2 {
+        text-align: center !important;
+      }
+
+      .guarantee-text p {
+        text-align: center !important;
+        padding: 0 15px !important;
+      }
+    }
+
+    /* 导航栏响应式样式 */
+    @media screen and (max-width: 767px) {
+      .nav-bar-container {
+        padding: 10px 15px !important;
+      }
+
+      /* Logo容器样式 */
+      .nav-logo {
+        margin-right: auto !important;
+        padding-left: 0 !important;
+      }
+
+      /* Logo图片样式 */
+      .nav-logo img {
+        width: 100px !important;
+        margin-left: 0 !important;
+      }
+
+      /* 隐藏导航链接 */
+      .nav-bar-container > div:not(:last-child) {
+        display: none !important;
+      }
+
+      /* 右侧按钮容器 */
+      .nav-bar-container > div:last-child {
+        margin-left: 15px !important;
+      }
+
+      /* 只保留搜索按钮 */
+      .nav-bar-container > div:last-child > *:not(:last-child) {
+        display: none !important;
+      }
+    }
   </style>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -777,7 +948,7 @@
        letter-spacing: 0.2px;
        height: 45px; /* 固定高度确保垂直居中 */
        line-height: 1;">
-  <span style="font-size: 18px; text-decoration: underline;">GET YOUR OFFER NOW</span> →
+  <span style="font-size: 18px; text-decoration: underline;">GET YOUR OFFER NOW</span> >
 </a>
 
                 <div style="margin-bottom: 20px;">
