@@ -35,6 +35,39 @@
       margin-bottom: 30px !important; /* 增加下方间距 */
       line-height: 1.2;
     }
+    /* 评论区头像样式优化 */
+    .body-reviews-flex .lefto {
+      width: 48px !important;
+      height: 48px !important;
+      border-radius: 50% !important;
+      object-fit: cover !important;
+      aspect-ratio: 1/1 !important;
+    }
+
+    /* 评论区布局响应式优化 */
+    @media screen and (max-width: 767px) {
+      .body-reviews-flex {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 15px !important;
+      }
+
+      .body-reviews-first {
+        flex: 0 0 48px !important;
+        margin-bottom: 0 !important;
+      }
+
+      .body-reviews-second {
+        flex: 1 !important;
+      }
+
+      /* 确保图片容器不会被拉伸 */
+      .rel {
+        width: 48px !important;
+        height: 48px !important;
+        position: relative !important;
+      }
+    }
   </style>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -1534,126 +1567,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- 更新固定底栏的class -->
-    <div class="fixed-bottom-bar" style="
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: #ffffff;
-      padding: 5px 20px;  /* 从10px改为5px */
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    ">
-      <!-- Logo容器 -->
-      <div class="logo-container" style="flex: 0 0 auto; margin-left: 310px;">
-        <img src="./IT WORKS!_files/MH-Logo.webp" alt="Men's Health Logo" style="width: 85px;">  <!-- 从100px改为85px -->
-      </div>
-
-      <!-- 倒计时 -->
-      <div class="countdown-container" style="
-        text-align: center;
-        margin: 0 20px;
-        font-family: Arial, sans-serif;
-      ">
-        <div style="
-          font-size: 16px;  /* 从14px改为12px */
-          color: #272626;
-          margin-bottom: 0px;  /* 从5px改为2px */
-        ">
-          Offer expires in
-        </div>
-        <div id="fixed-bar-countdown" style="
-          font-size: 18px;  /* 从20px改为18px */
-          font-weight: bold;
-          color: #D94C3A;
-        ">10:00</div>
-      </div>
-      
-      <!-- CTA按钮 -->
-      <a href="https://page.anytimemax.com/ping?s=5kbgx38b4cuhe5q3y7f9x" 
-         class="cta-button"
-         style="
-           background-color: #D94C3A;
-           color: white;
-           padding: 6px 27px; 
-           text-decoration: none;
-           border-radius: 3px;
-           font-weight: 500;
-           font-size: 13px; 
-           transition: background-color 0.3s;
-           margin-right: 310px;
-           font-family: 'Helvetica Neue', Arial, sans-serif;
-           letter-spacing: 0.3px;
-           display: flex;
-           align-items: center;
-         "
-         onmouseover="this.style.backgroundColor='#c0392b'" 
-         onmouseout="this.style.backgroundColor='#D94C3A'"
-      >
-        CLAIM YOUR OFFER <span style="margin: 0 3px;">></span>
-      </a>
-    </div>
-
-    <!-- 更新响应式样式 -->
-    <style>
-      @media (max-width: 768px) {
-        /* 固定底栏在移动端的样式 */
-        .fixed-bottom-bar {
-          justify-content: center !important;
-          padding: 5px !important;
-        }
-        
-        /* Logo容器在移动端的样式 */
-        .logo-container {
-          margin-left: 0 !important;
-        }
-        
-        /* 倒计时容器在移动端的样式 */
-        .countdown-container {
-          margin: 0 12px !important;
-          transform: scale(0.9);  /* 稍微缩小倒计时 */
-        }
-        
-        /* 按钮在移动端的样式 */
-        .cta-button {
-          margin-right: 0 !important;  /* 移除右边距 */
-          margin-left: 12px !important;
-          padding: 6px 15px !important;
-          font-size: 12px !important;
-          transform: scale(0.9);  /* 整体缩小按钮 */
-        }
-      }
-
-      /* 添加更小屏幕的样式 */
-      @media (max-width: 480px) {
-        .fixed-bottom-bar {
-          padding: 5px 10px !important;
-        }
-
-        .logo-container img {
-          width: 70px !important;  /* 更小屏幕上进一步缩小logo */
-        }
-
-        .countdown-container {
-          transform: scale(0.8);  /* 更小屏幕上进一步缩小倒计时 */
-          margin: 0 8px !important;
-        }
-
-        .cta-button {
-          padding: 4px 12px !important;
-          font-size: 11px !important;
-          transform: scale(0.8);  /* 更小屏幕上进一步缩小按钮 */
-        }
-      }
-    </style>
-
-    <!-- 调整底部padding -->
-    <div style="height: 60px;"></div>  <!-- 从80px改为60px -->
 </main>
 <script src="./IT WORKS!_files/jquery.min.js.download"></script>
 
