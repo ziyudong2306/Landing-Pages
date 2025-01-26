@@ -45,33 +45,46 @@
 
     /* 评论区布局响应式优化 */
     @media screen and (max-width: 767px) {
+      /* 评论容器布局 */
       .body-reviews-flex {
         display: flex !important;
         align-items: flex-start !important;
         gap: 15px !important;
       }
 
+      /* 评论头像区域 */
       .body-reviews-first {
-        flex: 0 0 auto !important; /* 让容器适应内容大小 */
-        width: auto !important;
-        min-width: auto !important;
-        margin: 0 !important;
+        flex: 0 0 auto !important;
       }
 
+      /* 评论内容区域 */
       .body-reviews-second {
         flex: 1 !important;
-        padding-left: 15px !important;
-        width: auto !important; /* 移除固定计算宽度 */
       }
 
-      /* 移除图片容器的固定大小 */
-      .rel {
-        width: auto !important;
-        height: auto !important;
-        position: relative !important;
-        margin: 0 !important;
-        padding: 0 !important;
+      /* 评论文字内容 */
+      .body-reviews-second span {
         display: block !important;
+        margin-bottom: 10px !important;
+        line-height: 1.5 !important;
+      }
+
+      /* 评论者名字 */
+      .body-reviews-second strong {
+        display: block !important;
+        margin-top: 10px !important;
+        font-size: 16px !important;
+      }
+    }
+
+    /* 更小屏幕的额外优化 */
+    @media screen and (max-width: 480px) {
+      .body-reviews-second {
+        padding-left: 10px !important;
+      }
+
+      .body-reviews-second span {
+        font-size: 14px !important;
       }
     }
   </style>
