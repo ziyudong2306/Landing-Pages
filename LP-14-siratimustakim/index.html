@@ -639,9 +639,9 @@
     box-sizing: border-box;
    }
 
-   #container, #main, .content, .base {
+   #container, #main, .content, .base, .page-brand-article-item, .inner_content {
     width: 100% !important;
-    margin: 0 !important;
+    margin: 0 auto !important;  /* 修改为 auto 以实现居中 */
     padding: 0 !important;
     box-sizing: border-box !important;
     max-width: 100%;
@@ -649,16 +649,19 @@
    }
 
    @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .base {
         width: 100% !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        margin: 0 !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
         box-sizing: border-box !important;
     }
     
     .content {
-        padding: 0 15px !important;
+        padding: 0 !important;
         margin: 0 auto !important;
         width: 100% !important;
         box-sizing: border-box !important;
@@ -666,7 +669,7 @@
     
     .page-brand-article-item {
         width: 100% !important;
-        margin: 0 !important;
+        margin: 0 auto !important;
         padding: 0 !important;
         box-sizing: border-box !important;
     }
@@ -674,8 +677,24 @@
     .inner_content {
         width: 100% !important;
         margin: 0 auto !important;
-        padding: 0 !important;
+        padding: 0 15px !important;  /* 添加左右内边距 */
         box-sizing: border-box !important;
+    }
+
+    /* 确保导航容器也居中 */
+    .nav-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* 调整子导航容器 */
+    .subnav-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
    }
   </style>
