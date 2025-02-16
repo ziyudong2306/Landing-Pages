@@ -517,7 +517,7 @@
       align-items: center;
       padding: 8px 15px;
       background-color: #fff;
-      border-bottom: 1px solid #eee;
+      border-bottom: none; /* 移除上方横线 */
       width: 100%;
       box-sizing: border-box;
     }
@@ -555,8 +555,8 @@
     .logo-container {
       text-align: center;
       padding: 15px 0;
-      border-bottom: 1px solid #eee;
-      position: static !important; /* 覆盖之前的定位 */
+      border-bottom: none; /* 移除下方横线 */
+      position: static !important;
       transform: none !important;
     }
 
@@ -595,14 +595,13 @@
       .auth-container {
         width: 100%;
         padding: 8px 0;  /* 移除左右内边距 */
-        border-bottom: 1px solid #eee;
       }
 
       .auth-buttons {
         display: flex;
         justify-content: flex-end;  /* 靠右对齐 */
         padding-right: 15px;  /* 添加右侧内边距 */
-        gap: 15px;  /* 增加按钮之间的间距 */
+        gap: 5px;  /* 减小按钮之间的间距 */
       }
 
       .auth-buttons a {
@@ -612,13 +611,15 @@
         border: none;
         color: #333;
         font-weight: 700;
+        white-space: nowrap;  /* 防止文字换行 */
       }
 
-      /* 添加分隔线 */
+      /* 修改分隔线样式 */
       .auth-buttons a:first-child:after {
         content: '|';
-        margin-left: 15px;
-        color: #ddd;  /* 使分隔线颜色更浅 */
+        margin-left: 5px;  /* 减小分隔线左边距 */
+        margin-right: 5px; /* 减小分隔线右边距 */
+        color: #ddd;
       }
 
       .header-top {
@@ -638,7 +639,7 @@
       }
 
       .logo-container img {
-        max-width: 140px; /* 缩小logo尺寸 */
+        max-width: 120px; /* 将logo尺寸从140px减小到120px */
         height: auto;
       }
 
@@ -688,7 +689,7 @@
       }
 
       .logo-container img {
-        max-width: 150px;
+        max-width: 100px; /* 在更小的屏幕上进一步减小到100px */
       }
 
       .auth-buttons a {
@@ -1291,23 +1292,12 @@
                       width: 100%;
                       max-width: 600px;
                       margin-top: 15px;
-                      font-size: 18px;
-                    ">
-          <b>
-           Ben Stiller
-          </b>
-         </span>
-         <span style="
-                      display: block;
-                      width: 100%;
-                      max-width: 600px;
-                      margin-top: 15px;
                       margin-bottom: 15px;
                       font-size: 18px;
                       text-align: left;
                     ">
           <b>
-           Christine Taylor (wife):
+           Ben Stiller
           </b>
          </span>
          <span style="
@@ -3375,8 +3365,7 @@ City: Austin. Age: 58
                                                 frequently —
                                                 how it works. My wife and I conduct 'tests' regularly, she says she can
                                                 feel the changes. I feel
-                                                it too,
-                                                the erection is really rock solid.
+                                                it too, the erection is really rock solid.
             </div>
            </div>
           </div>
