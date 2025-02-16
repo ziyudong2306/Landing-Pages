@@ -628,6 +628,57 @@
       }
     }
   </style>
+  <!-- 添加新的全局样式 -->
+  <style>
+   body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+   }
+
+   #container, #main, .content, .base {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    max-width: 100%;
+    overflow-x: hidden;
+   }
+
+   @media (max-width: 768px) {
+    .base {
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    .content {
+        padding: 0 15px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .page-brand-article-item {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    .inner_content {
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+   }
+  </style>
  </head>
  <body class="theme theme_light site_russia1" id="page_article_show">
   <div class="top-bar">
