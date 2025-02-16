@@ -246,16 +246,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 0;
+      padding: 10px 0;
     }
 
     .logo-container {
-      text-align: center;
-      margin-bottom: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 10px;
     }
 
     .logo-container img {
-      max-width: 300px;
+      max-width: 210px;
       height: auto;
     }
 
@@ -384,7 +386,7 @@
     .header-top {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end; /* 改为靠右对齐 */
       align-items: center;
       padding: 0 20px;
       margin-bottom: 15px;
@@ -404,12 +406,10 @@
       height: auto;
     }
 
+    /* 合并两个 .auth-buttons 的样式 */
     .auth-buttons {
-      margin-left: auto;
-      margin-right: 350px; /* 添加右边距来向左移动按钮 */
-    }
-
-    .auth-buttons {
+      position: absolute; /* 使用绝对定位 */
+      right: 350px; /* 距离右边1000px */
       display: flex;
       gap: 10px;
     }
@@ -419,7 +419,7 @@
       text-decoration: none;
       font-size: 14px;
       border-radius: 3px;
-      font-weight: 900; /* 改为900使文字更粗 */
+      font-weight: 900;
     }
 
     .sign-up {
@@ -457,7 +457,11 @@
 
     @media (max-width: 768px) {
       .header-top {
-        padding: 0 10px;
+        padding: 10px;
+        min-height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       
       nav {
@@ -772,24 +776,18 @@
  </head>
  <body class="theme theme_light site_russia1" id="page_article_show">
   <div class="top-bar">
-    <div>Best wellness buys</div>
-    <div id="current-time"></div>
-    <div>Body+Soul Shop</div>
+    <div class="brand-text">Best wellness buys</div>
+    <div class="auth-buttons">
+        <a  class="sign-up">Sign Up</a>
+        <span class="divider">|</span>
+        <a  class="log-in">Log In</a>
+    </div>
+  </div>
+  <div class="logo-container">
+    <img src="bodyandsoul.png" alt="Body and Soul">
   </div>
   
   <div class="nav-container">
-    <div class="header-top">
-      <div class="auth-container">
-        <div class="auth-buttons">
-          <a href="#" class="sign-up">Sign Up</a>
-          <a href="#" class="log-in">Log In</a>
-        </div>
-      </div>
-      <div class="logo-container">
-        <img src="images/bodyandsoul.png" alt="Body and Soul Logo">
-      </div>
-    </div>
-    
     <nav>
       <a class="active">Health</a>
       <a>Wellness</a>
