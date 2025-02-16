@@ -541,18 +541,42 @@
       }
 
       .auth-buttons {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
+        position: static;  /* 改为static以使用正常文档流 */
+        transform: none;
         margin: 0;
-        display: flex;
-        gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;  /* 添加底部边框线 */
+        justify-content: center;  /* 居中对齐按钮 */
       }
 
       .auth-buttons a {
-        padding: 6px 12px;
-        font-size: 12px;
+        padding: 5px 10px;
+        font-size: 14px;
+        background: none;  /* 移除背景色 */
+        border: none;  /* 移除边框 */
+        color: #333;  /* 统一文字颜色 */
+        font-weight: 700;  /* 调整字重 */
+      }
+
+      /* 移除sign-up按钮的特殊样式 */
+      .sign-up {
+        background-color: transparent;
+        color: #333;
+      }
+
+      /* 移除log-in按钮的特殊样式 */
+      .log-in {
+        border: none;
+      }
+
+      .header-top {
+        flex-direction: column;  /* 改为纵向排列 */
+        padding-top: 0;  /* 移除顶部内边距 */
+      }
+
+      .logo-container {
+        margin-top: 10px;  /* 给logo添加一些上边距 */
       }
 
       /* 隐藏主导航栏 */
