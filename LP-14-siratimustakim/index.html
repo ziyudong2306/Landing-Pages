@@ -790,8 +790,9 @@
     .inner_content {
         width: 100% !important;
         margin: 0 auto !important;
-        padding: 0 13px !important;  /* 添加固定的页边距 */
+        padding: 0 15px !important;  /* 修改为15px的页边距 */
         box-sizing: border-box !important;
+        max-width: 100%;
     }
 
     /* 确保导航容器也居中 */
@@ -809,6 +810,27 @@
         padding: 0 13px;  /* 与内容区域保持一致的页边距 */
         box-sizing: border-box;
     }
+   }
+
+   /* 添加新的样式 */
+   .vik-winners-bl .left_block {
+       padding: 15px !important;  /* 修改padding */
+       margin: 0 auto !important;
+       width: 100% !important;
+       box-sizing: border-box !important;
+   }
+
+   .vik-winners-bl .lb_top {
+       margin: 0 15px !important;  /* 添加左右边距 */
+       box-sizing: border-box !important;
+   }
+
+   /* 确保所有内容区块都有合适的边距 */
+   .vik-winners-bl .wins,
+   .vik-winners-bl .win_line {
+       padding-left: 15px !important;
+       padding-right: 15px !important;
+       box-sizing: border-box !important;
    }
   </style>
   <style>
