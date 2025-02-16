@@ -462,7 +462,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 1px solid #eee; /* 只保留一条底部边框 */
+        border-bottom: 2px solid #333; /* 修改边框粗细为2px，颜色改为更深的#333 */
       }
       
       nav {
@@ -595,6 +595,7 @@
       .auth-container {
         width: 100%;
         padding: 8px 0;  /* 移除左右内边距 */
+        border-bottom: 1px solid #eee;  /* 添加底部边框 */
       }
 
       .auth-buttons {
@@ -628,7 +629,7 @@
         display: flex;
         flex-direction: column;  /* 改为纵向排列 */
         align-items: center;
-        border-bottom: 1px solid #eee; /* 只保留一条底部边框 */
+        border-bottom: 2px solid #212121; /* 修改边框粗细为2px，颜色改为更深的#333 */
       }
 
       .logo-container {
@@ -760,7 +761,7 @@
     .inner_content {
         width: 100% !important;
         margin: 0 auto !important;
-        padding: 0 15px 0 25px !important;  /* 只增加左内边距 */
+        padding: 0 13px !important;  /* 修改为13px的左右内边距 */
         box-sizing: border-box !important;
     }
 
@@ -776,7 +777,7 @@
     .subnav-container {
         width: 100%;
         margin: 0 auto;
-        padding: 0 15px 0 25px;  /* 只增加左内边距 */
+        padding: 0 13px;  /* 修改为13px的左右内边距 */
         box-sizing: border-box;
     }
    }
@@ -827,7 +828,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-bottom: 1px solid #eee;
+            border-bottom: 2px solid #333; /* 修改边框粗细为2px，颜色改为更深的#333 */
             position: relative;  /* 添加相对定位 */
         }
 
@@ -850,6 +851,44 @@
             border: none;
         }
     }
+  </style>
+  <style>
+   /* 修改 auth-buttons 相关样式 */
+   @media (max-width: 768px) {
+     .auth-buttons {
+       position: absolute;
+       right: 10px;  /* 减小右侧距离 */
+       top: 50%;
+       transform: translateY(-50%);
+       display: flex;
+       align-items: center;
+       gap: 0;
+       justify-content: flex-end; /* 确保内容靠右对齐 */
+     }
+
+     .auth-buttons a {
+       padding: 5px;
+       font-size: 11px;
+       background: none;
+       border: none;
+       color: #333;
+       white-space: nowrap; /* 防止文字换行 */
+     }
+
+     /* 调整分隔线样式 */
+     .auth-buttons .divider {
+       margin: 0 3px; /* 减小分隔线两侧间距 */
+       color: #ddd;
+     }
+
+     /* 移除其他可能影响布局的样式 */
+     .sign-up, .log-in {
+       background-color: transparent;
+       color: #333;
+       border: none;
+       margin: 0; /* 移除可能的外边距 */
+     }
+   }
   </style>
  </head>
  <body class="theme theme_light site_russia1" id="page_article_show">
