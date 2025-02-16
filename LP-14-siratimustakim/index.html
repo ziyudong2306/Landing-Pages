@@ -520,11 +520,40 @@
         padding: 0;
       }
 
+      .auth-container {
+        width: 100%;
+        padding: 8px 0;  /* 移除左右内边距 */
+        border-bottom: 1px solid #eee;
+      }
+
+      .auth-buttons {
+        display: flex;
+        justify-content: flex-end;  /* 靠右对齐 */
+        padding-right: 15px;  /* 添加右侧内边距 */
+        gap: 15px;  /* 增加按钮之间的间距 */
+      }
+
+      .auth-buttons a {
+        padding: 0;
+        font-size: 14px;
+        background: none;
+        border: none;
+        color: #333;
+        font-weight: 700;
+      }
+
+      /* 添加分隔线 */
+      .auth-buttons a:first-child:after {
+        content: '|';
+        margin-left: 15px;
+        color: #ddd;  /* 使分隔线颜色更浅 */
+      }
+
       .header-top {
         padding: 10px;
         min-height: 50px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;  /* 改为纵向排列 */
         align-items: center;
       }
 
@@ -532,31 +561,12 @@
         position: relative;
         left: 0;
         transform: none;
-        margin: 0 auto;
+        margin: 15px auto;
       }
 
       .logo-container img {
         max-width: 180px;
         height: auto;
-      }
-
-      .auth-buttons {
-        position: static;  /* 改为static以使用正常文档流 */
-        transform: none;
-        margin: 0;
-        width: 100%;
-        padding: 10px 0;
-        border-bottom: 1px solid #eee;  /* 添加底部边框线 */
-        justify-content: center;  /* 居中对齐按钮 */
-      }
-
-      .auth-buttons a {
-        padding: 5px 10px;
-        font-size: 14px;
-        background: none;  /* 移除背景色 */
-        border: none;  /* 移除边框 */
-        color: #333;  /* 统一文字颜色 */
-        font-weight: 700;  /* 调整字重 */
       }
 
       /* 移除sign-up按钮的特殊样式 */
@@ -568,15 +578,6 @@
       /* 移除log-in按钮的特殊样式 */
       .log-in {
         border: none;
-      }
-
-      .header-top {
-        flex-direction: column;  /* 改为纵向排列 */
-        padding-top: 0;  /* 移除顶部内边距 */
-      }
-
-      .logo-container {
-        margin-top: 10px;  /* 给logo添加一些上边距 */
       }
 
       /* 隐藏主导航栏 */
@@ -605,8 +606,10 @@
       }
     }
 
-    /* 更小屏幕的优化 */
     @media (max-width: 480px) {
+      .auth-buttons {
+        padding-right: 10px;  /* 更小屏幕减少右侧内边距 */
+      }
       .header-top {
         padding: 8px;
       }
