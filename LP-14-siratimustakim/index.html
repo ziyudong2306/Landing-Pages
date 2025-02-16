@@ -636,11 +636,16 @@
         left: 0;
         transform: none;
         margin: 5px auto; /* 减小上下边距 */
+        width: 120px; /* 添加固定宽度 */
+        text-align: center; /* 确保图片居中 */
       }
 
       .logo-container img {
-        max-width: 120px; /* 将logo尺寸从140px减小到120px */
+        max-width: 100%; /* 改为100%以适应容器宽度 */
+        width: 120px; /* 添加固定宽度 */
         height: auto;
+        display: block; /* 确保图片块级显示 */
+        margin: 0 auto; /* 居中显示 */
       }
 
       /* 移除sign-up按钮的特殊样式 */
@@ -688,8 +693,12 @@
         padding: 8px;
       }
 
+      .logo-container {
+        width: 100px; /* 更小屏幕下减小容器宽度 */
+      }
+
       .logo-container img {
-        max-width: 100px; /* 在更小的屏幕上进一步减小到100px */
+        width: 100px; /* 更小屏幕下减小图片宽度 */
       }
 
       .auth-buttons a {
@@ -774,72 +783,71 @@
   </style>
   <style>
     @media (max-width: 768px) {
-        /* ... existing code ... */
-        
-        body.theme.theme_light .inner_content,
-        .inner_content {
-            width: 100% !important;
-            margin: 0 auto !important;
-            padding: 0 15px !important;  /* 改为10px */
-            box-sizing: border-box !important;
-            min-width: 0 !important;
+        /* 隐藏顶部栏 */
+        .top-bar {
+            display: none;
         }
 
-        body.theme.theme_light .subnav-container,
-        .subnav-container {
-            width: 100% !important;
-            margin: 0 auto !important;
-            padding: 0 15px !important;  /* 改为10px */
-            box-sizing: border-box !important;
-            min-width: 0 !important;
+        .nav-container {
+            padding: 0;
         }
 
-        /* 防止其他样式覆盖 */
-        #container, #main, .content, .page-brand-article-item {
-            min-width: 0 !important;
-            width: 100% !important;
-            max-width: 100% !important;
+        .auth-container {
+            width: 100%;
+            padding: 8px 0;
         }
 
-        /* 确保没有其他元素影响内容宽度 */
-        * {
-            max-width: 100vw !important;
-            overflow-x: hidden;
-        }
-    }
-  </style>
-  <style>
-    @media (max-width: 768px) {
-        /* 确保所有主要容器元素有一致的页边距 */
-        body.theme.theme_light .inner_content,
-        .inner_content,
-        body.theme.theme_light .subnav-container,
-        .subnav-container,
-        #container,
-        #main,
-        .content,
-        .base,
-        .page-brand-article-item {
-            width: 100% !important;
-            margin: 0 auto !important;
-            padding-left: 15px !important;
-            padding-right: 15px !important;
-            box-sizing: border-box !important;
-            min-width: 0 !important;
+        .auth-buttons {
+            position: absolute;
+            right: 30px;  /* 增加右侧距离 */
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            gap: 0;
         }
 
-        /* 确保图片也遵循相同的规则 */
-        img {
-            max-width: calc(100% - 30px) !important;  /* 减去左右padding的总和 */
-            height: auto !important;
-            margin: 0 auto !important;
-            display: block !important;
+        .auth-buttons a {
+            padding: 5px;
+            font-size: 11px;
+            background: none;
+            border: none;
+            color: #333;
         }
 
-        /* 防止内容溢出 */
-        * {
-            max-width: 100vw !important;
-            box-sizing: border-box !important;
+        /* 修改分隔线样式 */
+        .auth-buttons .divider {
+            margin: 0 5px;
+            color: #ddd;
+        }
+
+        .header-top {
+            padding: 10px;
+            min-height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            position: relative;  /* 添加相对定位 */
+        }
+
+        .logo-container {
+            position: relative;
+            left: 0;
+            transform: none;
+            margin: 5px auto;
+        }
+
+        .logo-container img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        /* 移除特殊样式 */
+        .sign-up, .log-in {
+            background-color: transparent;
+            color: #333;
+            border: none;
         }
     }
   </style>
