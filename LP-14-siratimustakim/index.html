@@ -499,24 +499,29 @@
   </style>
   <style>
     .top-bar {
-      display: flex;
+      display: flex !important; /* 强制显示 */
       justify-content: space-between;
       align-items: center;
-      padding: 10px 15px;
+      padding: 8px 15px;
       background-color: #fff;
       border-bottom: 1px solid #eee;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .brand-text {
-      font-size: 14px;
-      font-weight: 700;
+      font-size: 12px;  /* 缩小字体 */
+      font-weight: 400;  /* 减小字体粗细 */
       color: #333;
     }
 
     .auth-buttons {
-      display: flex;
+      display: flex !important; /* 强制显示 */
       align-items: center;
       gap: 15px;
+      position: static !important; /* 覆盖之前的绝对定位 */
+      transform: none !important;
+      right: auto !important;
     }
 
     .auth-buttons a {
@@ -525,6 +530,9 @@
       text-decoration: none;
       font-weight: 700;
       cursor: pointer;
+      background: none !important; /* 移除背景色 */
+      border: none !important; /* 移除边框 */
+      padding: 0 !important; /* 移除内边距 */
     }
 
     .auth-buttons .divider {
@@ -535,29 +543,27 @@
       text-align: center;
       padding: 15px 0;
       border-bottom: 1px solid #eee;
+      position: static !important; /* 覆盖之前的定位 */
+      transform: none !important;
     }
 
     .logo-container img {
       max-width: 180px;
       height: auto;
+      margin: 0 auto;
+      display: block;
     }
 
+    /* 删除其他所有关于 .top-bar, .auth-buttons, .logo-container 的样式 */
+    
     @media (max-width: 768px) {
+      /* 移除之前的隐藏样式 */
       .top-bar {
-        display: flex !important;  /* 强制显示 */
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
+        display: flex !important;
       }
-
-      .auth-buttons {
-        display: flex !important;  /* 强制显示 */
-      }
-
-      .logo-container img {
-        max-width: 180px !important;
-        width: auto !important;
-        margin: 0 auto !important;
+      
+      nav {
+        display: none;
       }
     }
   </style>
