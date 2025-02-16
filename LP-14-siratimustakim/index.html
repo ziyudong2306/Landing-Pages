@@ -828,8 +828,8 @@
    /* 确保所有内容区块都有合适的边距 */
    .vik-winners-bl .wins,
    .vik-winners-bl .win_line {
-       padding-left: 15px !important;
-       padding-right: 15px !important;
+       padding-left: 13px !important;
+       padding-right: 13px !important;
        box-sizing: border-box !important;
    }
   </style>
@@ -938,6 +938,56 @@
        color: #333;
        border: none;
        margin: 0; /* 移除可能的外边距 */
+     }
+   }
+  </style>
+  <style>
+   /* 在现有样式的基础上添加以下样式 */
+   @media (max-width: 768px) {
+     .inner_content {
+       width: 100% !important;
+       margin: 0 auto !important;
+       padding: 0 15px !important;
+       box-sizing: border-box !important;
+       max-width: 100% !important;
+     }
+
+     /* 增加选择器优先级并使用 !important */
+     .vik-winners-bl .left_block {
+       padding: 15px !important;
+       width: 100% !important;
+       box-sizing: border-box !important;
+       margin: 0 auto !important;
+     }
+
+     .vik-winners-bl .lb_top,
+     .vik-winners-bl .wins,
+     .vik-winners-bl .win_line {
+       margin-left: 0 !important;
+       margin-right: 0 !important;
+       padding-left: 15px !important;
+       padding-right: 15px !important;
+       box-sizing: border-box !important;
+       width: 100% !important;
+     }
+
+     /* 防止其他样式覆盖 */
+     body .content,
+     body .base,
+     body .page-brand-article-item {
+       padding-left: 0 !important;
+       padding-right: 0 !important;
+       width: 100% !important;
+       box-sizing: border-box !important;
+     }
+
+     /* 确保所有内容块都有正确的边距 */
+     .content > *,
+     .base > *,
+     .page-brand-article-item > * {
+       padding-left: 15px !important;
+       padding-right: 15px !important;
+       box-sizing: border-box !important;
      }
    }
   </style>
