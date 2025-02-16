@@ -502,14 +502,63 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 5px 20px;
-      font-size: 14px;  /* 添加较小的字体大小 */
+      padding: 10px 15px;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
     }
 
-    #current-time {
+    .brand-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .auth-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .auth-buttons a {
+      font-size: 14px;
+      color: #333;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .auth-buttons .divider {
+      color: #ddd;
+    }
+
+    .logo-container {
       text-align: center;
-      flex: 1;  /* 让时间div占据剩余空间 */
-      margin: 0 15px;  /* 在两侧添加间距 */
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo-container img {
+      max-width: 180px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .top-bar {
+        display: flex !important;  /* 强制显示 */
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      .auth-buttons {
+        display: flex !important;  /* 强制显示 */
+      }
+
+      .logo-container img {
+        max-width: 180px !important;
+        width: auto !important;
+        margin: 0 auto !important;
+      }
     }
   </style>
   <style>
@@ -784,7 +833,7 @@
     </div>
   </div>
   <div class="logo-container">
-    <img src="bodyandsoul.png" alt="Body and Soul">
+    <img src="images/bodyandsoul.png" alt="Body and Soul">
   </div>
   
   <div class="nav-container">
