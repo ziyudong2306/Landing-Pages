@@ -561,10 +561,39 @@
     }
 
     .logo-container img {
-      max-width: 180px;
+      max-width: 180px;  /* 设置固定的最大宽度 */
       height: auto;
       margin: 0 auto;
       display: block;
+    }
+
+    @media (max-width: 768px) {
+      .logo-container {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin: 5px auto;
+        width: 120px;
+        text-align: center;
+      }
+
+      .logo-container img {
+        max-width: 100%;
+        width: 120px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-container {
+        width: 100px;
+      }
+
+      .logo-container img {
+        width: 100px;
+      }
     }
 
     /* 删除其他所有关于 .top-bar, .auth-buttons, .logo-container 的样式 */
@@ -725,7 +754,7 @@
 
    #container, #main, .content, .base, .page-brand-article-item, .inner_content {
     width: 100% !important;
-    margin: 0 auto !important;  /* 修改为 auto 以实现居中 */
+    margin: 0 auto !important;
     padding: 0 !important;
     box-sizing: border-box !important;
     max-width: 100%;
@@ -761,7 +790,7 @@
     .inner_content {
         width: 100% !important;
         margin: 0 auto !important;
-        padding: 0 13px !important;  /* 修改为13px的左右内边距 */
+        padding: 0 13px !important;  /* 添加固定的页边距 */
         box-sizing: border-box !important;
     }
 
@@ -777,7 +806,7 @@
     .subnav-container {
         width: 100%;
         margin: 0 auto;
-        padding: 0 13px;  /* 修改为13px的左右内边距 */
+        padding: 0 13px;  /* 与内容区域保持一致的页边距 */
         box-sizing: border-box;
     }
    }
