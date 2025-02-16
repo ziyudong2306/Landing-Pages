@@ -706,7 +706,7 @@
         .inner_content {
             width: 100% !important;
             margin: 0 auto !important;
-            padding: 0 10px !important;  /* 改为10px */
+            padding: 0 15px !important;  /* 改为10px */
             box-sizing: border-box !important;
             min-width: 0 !important;
         }
@@ -715,7 +715,7 @@
         .subnav-container {
             width: 100% !important;
             margin: 0 auto !important;
-            padding: 0 10px !important;  /* 改为10px */
+            padding: 0 15px !important;  /* 改为10px */
             box-sizing: border-box !important;
             min-width: 0 !important;
         }
@@ -731,6 +731,41 @@
         * {
             max-width: 100vw !important;
             overflow-x: hidden;
+        }
+    }
+  </style>
+  <style>
+    @media (max-width: 768px) {
+        /* 确保所有主要容器元素有一致的页边距 */
+        body.theme.theme_light .inner_content,
+        .inner_content,
+        body.theme.theme_light .subnav-container,
+        .subnav-container,
+        #container,
+        #main,
+        .content,
+        .base,
+        .page-brand-article-item {
+            width: 100% !important;
+            margin: 0 auto !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            box-sizing: border-box !important;
+            min-width: 0 !important;
+        }
+
+        /* 确保图片也遵循相同的规则 */
+        img {
+            max-width: calc(100% - 30px) !important;  /* 减去左右padding的总和 */
+            height: auto !important;
+            margin: 0 auto !important;
+            display: block !important;
+        }
+
+        /* 防止内容溢出 */
+        * {
+            max-width: 100vw !important;
+            box-sizing: border-box !important;
         }
     }
   </style>
