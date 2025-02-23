@@ -1280,13 +1280,15 @@ a[href*="powervitality"] {
         justify-content: center;
         gap: 10px;
         margin: 15px 0;
+        @media (max-width: 768px) {
+          flex-direction: column;  /* 移动端改为纵向排列 */
+          width: 100%;
+        }
       ">
         <img src="images/shield.png" alt="Security Shield" style="
           height: 24px;
           @media (max-width: 768px) {
-            width: 100%;
             margin: 0 auto;
-            display: block;
           }
         ">
         <span style="
@@ -1294,10 +1296,8 @@ a[href*="powervitality"] {
           color: #666;
           font-weight: 500;
           @media (max-width: 768px) {
-            width: 100%;
             text-align: center;
             margin-top: 5px;
-            display: block;
           }
         ">Secure Payment - 60-Day Money Back Guarantee</span>
       </div>
