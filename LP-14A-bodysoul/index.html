@@ -1280,26 +1280,36 @@ a[href*="powervitality"] {
         justify-content: center;
         gap: 10px;
         margin: 15px 0;
-        @media (max-width: 768px) {
-          flex-direction: column;  /* 移动端改为纵向排列 */
-          width: 100%;
-        }
       ">
-        <img src="images/shield.png" alt="Security Shield" style="
-          height: 24px;
+        <style>
           @media (max-width: 768px) {
-            margin: 0 auto;
+            .secure-payment-container {
+              flex-direction: column;
+              width: 100%;
+            }
+            .secure-payment-image {
+              margin: 0 auto;
+            }
+            .secure-payment-text {
+              text-align: center;
+              margin-top: 5px;
+            }
           }
+        </style>
+        <div class="secure-payment-container" style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          width: 100%;
         ">
-        <span style="
-          font-size: 16px;
-          color: #666;
-          font-weight: 500;
-          @media (max-width: 768px) {
-            text-align: center;
-            margin-top: 5px;
-          }
-        ">Secure Payment - 60-Day Money Back Guarantee</span>
+          <img class="secure-payment-image" src="images/shield.png" alt="Security Shield" style="height: 24px;">
+          <span class="secure-payment-text" style="
+            font-size: 16px;
+            color: #666;
+            font-weight: 500;
+          ">Secure Payment - 60-Day Money Back Guarantee</span>
+        </div>
       </div>
 
       <br/>
