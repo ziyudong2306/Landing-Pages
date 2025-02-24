@@ -34,10 +34,36 @@
       margin-bottom: 20px;
       line-height: 1.2;
     }
+
+    /* 默认样式 */
+    .nav-bar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px 20px;
+    }
+
+    /* 移动端响应式样式 */
+    @media screen and (max-width: 768px) {
+      .mobile-hide {
+        display: none !important;
+      }
+      
+      .nav-bar-container {
+        justify-content: flex-start; /* Logo靠左显示 */
+        padding: 10px 15px; /* 调整移动端padding */
+      }
+      
+      .nav-logo img {
+        width: 90px; /* 移动端logo稍微缩小 */
+      }
+    }
   </style>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>IT WORKS!</title>
+  <title>Unlock Your True Potential</title>
   <meta name="referrer" content="no-referrer">
   <link href="https://page.anytimemax.com/us/Dallas/assets/m4/favicon.ico" rel="icon" type="image/png">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=6">
@@ -87,8 +113,8 @@
           <img src="./IT WORKS!_files/MH-Logo.webp" alt="Men's Health Logo" style="width: 113px;">
         </a>
 
-        <!-- Navigation Links -->
-        <div style="display: flex; align-items: center; gap: 35px;">
+        <!-- Navigation Links - 添加mobile-hide类 -->
+        <div class="mobile-hide" style="display: flex; align-items: center; gap: 35px;">
           <a style="color: #222; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">HEALTH</a>
           <a style="color: #222; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">FITNESS</a>
           <a style="color: #222; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">SEX</a>
@@ -97,8 +123,8 @@
           <a style="color: #222; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">PODCASTS</a>
         </div>
 
-        <!-- Right Side Buttons -->
-        <div style="display: flex; align-items: center; gap: 25px;">
+        <!-- Right Side Buttons - 添加mobile-hide类 -->
+        <div class="mobile-hide" style="display: flex; align-items: center; gap: 25px;">
           <a class="top-nav-subscribe offerlink" rel="noopener" style="background-color: #E4002B; color: white; padding: 8px 20px; border-radius: 3px; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;">
             SUBSCRIBE
           </a>
