@@ -81,24 +81,28 @@
                     <p>The best part of <a target="_blank" href="https://raingers-thround.com/click">Fairy Farms Hemp Gummies</a> is that it does not contain THC. THC is the component in recreational marijuana that gets smokers that "high" feeling while the real medical benefits come from the nonpsychoactive component, Cannabidiol.</p> 
                     <p><a target="_blank" href="https://raingers-thround.com/click">Fairy Farms Hemp Gummies</a> is 100% safe and legal in Australia. You can skip the long wait of doctors appointments and the frightfully expensive bills with <a target="_blank" href="https://raingers-thround.com/click">Fairy Farms Hemp Gummies</a>.</p> 
                     <p><strong>SPECIAL OFFER:</strong> For a limited time, Phil and Tiger are now offering 50% off <a target="_blank" href="https://raingers-thround.com/click">Fairy Farms Hemp Gummies</a>. You can take advantage of this limited time offer and enjoy the life changing benefits of <a target="_blank" href="https://raingers-thround.com/click">Fairy Farms Hemp Gummies</a> just like many of our readers have.</p> 
-                    <div class="product-inner"> 
-                        <div class="pro-title"> 
-                            <h1>LIMITED TIME BUY 3 GET 2 FREE OFFER FOR OUR READERS</h1> 
+                    
+                    <div class="product-inner" style="max-width: 800px; margin: 0 auto; border: 2px dashed #ff0000; padding: 20px; box-sizing: border-box;"> 
+                        <div class="pro-title" style="text-align: center; background-color: #f5f5f5; padding: 15px; margin: -20px -20px 20px -20px;"> 
+                            <h1 style="margin: 0;">LIMITED TIME BUY 3 GET 2 FREE OFFER FOR OUR READERS</h1> 
                         </div>                         
-                        <div class="pro-offer"> 
-                            <div class="po-img"> 
-</div>                             
-                            <div class="po-text"> <a target="_blank" href="https://raingers-thround.com/click"> <h1>Fairy Farms Hemp Gummies</h1> </a> 
-                                <p><b>Click here to get your bottle of <a target="_blank" href="https://raingers-thround.com/click">Fairy Farms Hemp Gummies</a></b><a target="_blank" href="https://raingers-thround.com/click"></a></p> 
-                                <p><strong>BUY 3 GET 2 FREE Promotion Ends:</strong> March 30, 2025</p> 
-                                <p><span>*Sell Out Risk: <b>High</b></span></p> <a target="_blank" href="https://raingers-thround.com/click"> <center>
-                                        <img src="new_3_1.png">
-                                    </center> </a> 
+                        <div class="pro-offer" style="display: flex; flex-direction: column; align-items: center;"> 
+                            <div class="po-text" style="text-align: center; width: 100%;"> 
+                                <a target="_blank" href="https://raingers-thround.com/click">
+                                    <h1>Fairy Farms Hemp Gummies</h1>
+                                </a> 
+                                <p><b>Click here to get your bottle of <a target="_blank" href="https://raingers-thround.com/click">Fairy Farms Hemp Gummies</a></b></p> 
+                                <p><strong>BUY 3 GET 2 FREE<br> Promotion Ends:</strong> <span id="promoEndDate"></span></p> 
+                                <p><span>*Sell Out Risk: <b>High</b></span></p>
+                                <a target="_blank" href="https://raingers-thround.com/click">
+                                    <img src="new_3_1.png" style="width:400; height:auto; max-width: 100%;">
+                                </a> 
                             </div>                             
-                        </div>                         
-                        <!-- Add the button at the bottom -->
-                        <div style="text-align: center; margin-top: 20px;"><a href="https://raingers-thround.com/click" style="display: inline-block;background-color: #3ab349;color: white;padding: 15px 30px;font-size: 18px;font-weight: bold;text-decoration: none;border-radius: 5px;">
-            CHECK AVAILABILITY </a>
+                        </div>
+                        <div style="text-align: center; margin-top: 20px;">
+                            <a href="https://raingers-thround.com/click" style="display: inline-block; background-color: #3ab349; color: white; padding: 15px 30px; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px;">
+                                CHECK AVAILABILITY
+                            </a>
                         </div>
                     </div>
                     <!-- COMMENTS -->                     
@@ -285,5 +289,21 @@ var waypoint = new Waypoint({
   }
 })
 </script>         
+        <script>
+            function formatDate(date) {
+                const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+            }
+            
+            function setPromoEndDate() {
+                const today = new Date();
+                const endDate = new Date();
+                endDate.setDate(today.getDate() + 21);
+                document.getElementById('promoEndDate').textContent = formatDate(endDate);
+            }
+            
+            // 页面加载时执行
+            setPromoEndDate();
+        </script>
     </body>
 </html>
