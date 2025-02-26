@@ -670,10 +670,21 @@ h2.form-title-h2 span {
 }
 
 .priem ul li {
-    list-style-type: none;
     display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 15px;
-    align-items: flex-start;
+}
+
+.priem ul li svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.priem ul li p {
+    margin: 0;
+    flex: 1;
 }
 
 .carousel-container {
@@ -1024,28 +1035,21 @@ p.formdown {
 }
 
 .symptoms ul li {
-    position: relative;
-    line-height: 32px;
-    font-size: 18px;
-    font-family: "Figtree", sans-serif;
-    font-weight: 300;
-    list-style-type: inherit;
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.symptoms ul li img {
-    width: 20px;
-    height: 20px;
-    margin-right: 7px;
-    position: relative;
-    top: 3px;
+.symptoms ul li svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
 }
 
 .symptoms ul li p {
-    margin-left: 5px;
-    margin-bottom: 0;
+    margin: 0;
+    flex: 1;
 }
 
 .symptoms img.symp {
