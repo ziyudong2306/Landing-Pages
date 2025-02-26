@@ -9,22 +9,46 @@
   </title>
   <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
   <link href="css/main.css" rel="stylesheet"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-  </script>
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" 
+      rel="stylesheet"
+      media="print" 
+      onload="this.media='all'"
+/>
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="images/MH-Logo.webp" as="image">
+  <meta http-equiv="Cache-Control" content="max-age=31536000">
+  <!-- DNS预解析 -->
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  
+  <!-- 预连接 -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- 资源提示 -->
+  <link rel="modulepreload" href="js/script.js">
+  <link rel="modulepreload" href="js/date.js">
+  <style>
+   @font-face {
+     font-family: 'Anton';
+     font-display: swap;
+     src: url(../fonts/Anton-Regular.woff2) format('woff2');
+   }
+  </style>
  </head>
  <body>
     <div class="header">
         <div class="header-container">
             <div class="logo">
                 <a>
-                    <img src="images/MH-Logo.webp" alt="Men's Health" style="height: 37px;"/>
+                    <img src="images/MH-Logo.webp" 
+                        width="120" 
+                        height="37" 
+                        alt="Men's Health" 
+                        style="height: 37px;"/>
                 </a>
             </div>
             <nav class="main-nav">
@@ -63,10 +87,10 @@
      </li>
     </ul>
    </div>
-   <h1 class="h1-title" id="article-title" style="margin: 4.5rem 0 2rem;">
+   <h1 class="h1-title article-title">
     "Priceline Pharmacy presents a new supplement for a stable, powerful erection. Effective even after 65 years!"
    </h1>
-   <h2 class="h2-subtitle" style="font-size: 1.5rem; margin-top: 2.5rem;">
+   <h2 class="h2-subtitle">
     Backed by science and trusted by men worldwide.
    </h2>
    <div class="article-meta" ">
@@ -84,7 +108,11 @@
     We spoke with Mark O'Reilly, the Director and Head of Priceline Pharmacy, to compare popular potency enhancers. After an extensive evaluation, we identified the most reliable, safe, and affordable option, which is now being recommended by Priceline Pharmacy.
    </p>
    <div class="content-img">
-    <img src="images/zer.png"/>
+    <picture>
+      <source srcset="images/zer.webp" type="image/webp">
+      <source srcset="images/zer.jpg" type="image/jpeg">
+      <img src="images/zer.jpg" loading="lazy" alt="description"/>
+    </picture>
     <span>
      Mark O'Reilly, CEO and President of Priceline Pharmacy Limited
     </span>
@@ -116,7 +144,10 @@
     Good day. Most of Priceline Pharmacy's customers are men aged 35 and up. After looking at the data, I realized that many men face challenges with erectile function as they age. This often leads to secondary health issues, including stress and heart conditions. I am concerned that many men are unaware of modern and affordable ways to restore their vitality and confidence.
    </p>
    <div class="content-img">
-    <img src="images/p2.jpg"/>
+    <picture>
+      <source srcset="images/p2.jpg" type="image/jpeg">
+      <img src="images/p2.jpg"/>
+    </picture>
    </div>
    <p>
     That's why I agreed to this interview. The more men learn about effective and affordable solutions, the fewer problems we will have with premature impotence.
@@ -137,8 +168,16 @@
     But after completing the course of therapy, their erections come back stronger than ever. These men start a new, vibrant, and fulfilling sex life! They transform before our eyes, looking 10 years younger. It's amazing to see these changes!
    </p>
    <div class="content-video">
-    <video autoplay="" class="video" loop="" muted="" playsinline="">
-     <source src="videos/video.mp4" type="video/mp4"/>
+    <video 
+      class="video" 
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="none"
+      loading="lazy"
+      poster="images/video-poster.jpg">
+      <source src="videos/video.mp4" type="video/mp4"/>
     </video>
    </div>
    <p>
@@ -148,7 +187,11 @@
     An inflamed prostate over time can lead to adenoma, which makes urination difficult and can cause pyelonephritis. The next stage after adenoma is prostate cancer. Men with erectile dysfunction are 7 times more likely to develop prostate cancer than men without these issues.
    </p>
    <div class="content-img">
-    <img src="images/ph3.webp"/>
+    <picture>
+      <source srcset="images/ph3.webp" type="image/webp">
+      <source srcset="images/ph3.jpg" type="image/jpeg">
+      <img src="images/ph3.jpg"/>
+    </picture>
    </div>
    <p>
     <span class="p-bold">
@@ -163,43 +206,59 @@
     If blood flow in the pelvic area is disrupted, it leads to erection problems. What physiological factors can cause this?
    </p>
    <div class="content-img">
-    <img src="images/img3.webp"/>
+    <picture>
+      <source srcset="images/img3.webp" type="image/webp">
+      <source srcset="images/img3.jpg" type="image/jpeg">
+      <img src="images/img3.jpg"/>
+    </picture>
    </div>
    <div class="symptoms">
     <img class="symp" src="images/mark.png"/>
     <ul>
      <li>
-      <img src="images/no.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
       <p>
        Diseases of internal organs, especially endocrine or neurological issues.
       </p>
      </li>
      <li>
-      <img src="images/no.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
       <p>
        Androgen deficiency, where the production of "male" hormones, mainly testosterone, decreases for various reasons.
       </p>
      </li>
      <li>
-      <img src="images/no.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
       <p>
        Complications from infectious diseases.
       </p>
      </li>
      <li>
-      <img src="images/no.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
       <p>
        Spinal cord injuries.
       </p>
      </li>
      <li>
-      <img src="images/no.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
       <p>
        Vitamin B deficiency.
       </p>
      </li>
      <li class="lib">
-      <img src="images/no.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
       <p>
        Side effects from certain medications that reduce erections, like immunomodulators, diuretics, antihypertensives, and others.
       </p>
@@ -235,8 +294,11 @@
      Viagra is the most well-known potency enhancer in the world, and it's no coincidence: it works, and its effectiveness has been proven many times. The brand is well-known, but it has many drawbacks. Let me explain in more detail.
     </p>
     <div class="content-img">
-     <img src="images/ww1.png">
-     </img>
+     <picture>
+       <source srcset="images/ww1.webp" type="image/webp">
+       <source srcset="images/ww1.jpg" type="image/jpeg">
+       <img src="images/ww1.jpg">
+     </picture>
     </div>
     <ul>
      <li>
@@ -279,8 +341,11 @@
      An effective pill based on the active ingredient udenafil. It works well but only with sexual stimulation. It acts faster than Viagra—within 30 minutes. And the effect can last up to 24 hours. It has fewer side effects, but still has many drawbacks.
     </p>
     <div class="content-img">
-     <img src="images/ww2.png">
-     </img>
+     <picture>
+       <source srcset="images/ww2.webp" type="image/webp">
+       <source srcset="images/ww2.jpg" type="image/jpeg">
+       <img src="images/ww2.jpg">
+     </picture>
     </div>
     <ul>
      <li>
@@ -318,8 +383,11 @@
      Another popular drug that reliably replaces Viagra. The active ingredient is vardenafil. Advantages include quick action, literally within 15-25 minutes. With regular but moderate use, it can have a positive long-term effect on potency, but this takes a long time—a year or more. However, there are still some drawbacks. Although few, they are significant, hence only 3 points.
     </p>
     <div class="content-img">
-     <img src="images/ww3.png">
-     </img>
+     <picture>
+       <source srcset="images/ww3.webp" type="image/webp">
+       <source srcset="images/ww3.jpg" type="image/jpeg">
+       <img src="images/ww3.jpg">
+     </picture>
     </div>
     <ul>
      <li>
@@ -358,8 +426,11 @@
     is a relatively recent development, but it has already broken all conceivable records for effectiveness. In fact, this is the remedy top doctors use in their practice, treating both premature erectile dysfunction and patients aged 70-80.
    </p>
    <div class="content-img">
-    <img src="images/top2.png">
-    </img>
+    <picture>
+      <source srcset="images/top2.webp" type="image/webp">
+      <source srcset="images/top2.jpg" type="image/jpeg">
+      <img src="images/top2.jpg">
+    </picture>
    </div>
    <p>
     The formula of
@@ -369,8 +440,11 @@
     is based on the famous Tibetan mushroom cordyceps, the root of Eurycoma, Epimedium extract, and other powerful natural extracts. Its natural composition is a big advantage.
    </p>
    <div class="content-img">
-    <img src="images/ko.png">
-    </img>
+    <picture>
+      <source srcset="images/ko.webp" type="image/webp">
+      <source srcset="images/ko.jpg" type="image/jpeg">
+      <img src="images/ko.jpg">
+    </picture>
    </div>
    <h2>
     How to Take
@@ -385,7 +459,9 @@
    <div class="priem">
     <ul>
      <li>
-      <img src="images/check.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
       <p>
        <span class="p-bold">
         Recommended dosage:
@@ -394,19 +470,25 @@
       </p>
      </li>
      <li>
-      <img src="images/check.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
       <p>
        Just chew one gummy until it dissolves in your mouth.
       </p>
      </li>
      <li>
-      <img src="images/check.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
       <p>
        You can drink a small amount of water to wash it down.
       </p>
      </li>
      <li class="lib">
-      <img src="images/check.png"/>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
       <p>
        The minimum treatment course
        <span class="p-bold">
@@ -427,8 +509,11 @@
     supplement, designed to enhance male erection, is certified by Lloyds Register and holds a European certificate. These globally recognized certifications confirm the product's high quality and effectiveness, meeting the rigorous standards set by leading organizations.
    </p>
    <div class="content-img">
-    <img src="images/certificate.jpg">
-    </img>
+    <picture>
+      <source srcset="images/certificate.webp" type="image/webp">
+      <source srcset="images/certificate.jpg" type="image/jpeg">
+      <img src="images/certificate.jpg">
+    </picture>
    </div>
    <p>
     <a href="{offer}">
@@ -1219,12 +1304,8 @@
      </div>
    </div>
   </div>
-  <script referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230315174105">
-  </script>
-  <script src="js/script.js">
-  </script>
-  <script src="js/date.js">
-  </script>
+  <script src="js/script.js" defer></script>
+  <script src="js/date.js" defer></script>
   <script type="text/javascript">
    document.querySelectorAll('.link-block').forEach(link => {
                 link.addEventListener('click', function(event) {
