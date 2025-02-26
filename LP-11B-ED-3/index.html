@@ -31,6 +31,12 @@
     width: 100%;
     height: auto;
     pointer-events: none; /* 防止用户交互影响动画 */
+    animation: forceRepaint 0.1s infinite;
+  }
+
+  @keyframes forceRepaint {
+    from { opacity: 0.99; }
+    to { opacity: 1; }
   }
   </style>
  </head>
@@ -97,7 +103,7 @@
    </div>
    
    <div class="content-img">
-    <img src="images/2927.gif" alt="" preload="auto" fetchpriority="high"/>
+    <img src="images/2927.gif" alt="" class="animated-gif" decoding="async"/>
    </div>
    <!-- 添加图片说明文字 -->
    <div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 20px auto; padding: 20px;">
@@ -120,7 +126,7 @@
     </p>
 
    <div class="content-img">
-    <img src="images/00.gif" alt="" preload="auto" fetchpriority="high"/>
+    <img src="images/00.gif" alt="" class="animated-gif" decoding="async"/>
    </div>
 
    <p>
@@ -138,7 +144,7 @@
     </p>
    
     <div class="content-img">
-    <img src="images/5004.gif" alt="" preload="auto" fetchpriority="high"/>
+    <img src="images/5004.gif" alt="" class="animated-gif" decoding="async"/>
    </div>
 
    <p>
@@ -155,7 +161,7 @@
    </p>
 
    <div class="content-img">
-    <img src="images/5544.gif" alt="" preload="auto" fetchpriority="high"/>
+    <img src="images/5544.gif" alt="" class="animated-gif" decoding="async"/>
    </div>
 
    <p class="p-border" style="margin: 2.5rem 0;">
@@ -1368,6 +1374,19 @@
 
     // 更新页面上的日期
     document.getElementById('publish-date').textContent = formattedDate;
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const gifs = document.querySelectorAll('.animated-gif');
+    gifs.forEach(gif => {
+      gif.addEventListener('load', function() {
+        // 强制浏览器重新加载GIF
+        const src = gif.src;
+        gif.src = '';
+        gif.src = src;
+      });
+    });
+  });
   </script>
  </body>
 </html>
