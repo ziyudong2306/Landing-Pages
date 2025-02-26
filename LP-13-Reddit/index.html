@@ -1028,15 +1028,10 @@
       }
       .action-row {
         color: var(--color-tone-2);
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 3;
         grid-column: 1/4;
-        display: -ms-grid;
         display: grid;
         gap: 0.5rem;
         padding: 0.5rem 1rem;
-        -ms-grid-columns: auto 0.5rem auto 0.5rem 1fr 0.5rem [last-line] 0.5rem
-          auto;
         grid-template-columns: repeat(2, auto) 1fr [last-line] auto;
       }
       .action {
@@ -1480,9 +1475,7 @@
         text-transform: uppercase;
         border: 1px solid #1d2535;
         max-width: 510px;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
+        transition: all 0.3s;
       }
       #ssbutton:hover {
         background-color: #0b263b;
@@ -1530,6 +1523,16 @@
         document.write(d.toLocaleDateString(undefined, options));
       }
     </script>
+
+    <!-- 预加载关键CSS -->
+    <link rel="preload" href="./Reddit_files/style.css" as="style">
+    
+    <!-- 预加载关键图片 -->
+    <link rel="preload" href="./Reddit_files/money.svg" as="image">
+    
+    <!-- 延迟加载非关键JavaScript -->
+    <script src="./Reddit_files/script.js" defer></script>
+    <script src="./Reddit_files/valik-blocker.js" defer></script>
   </head>
 
   <body>
