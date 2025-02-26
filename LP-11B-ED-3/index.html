@@ -21,6 +21,18 @@
   <link rel="preload" as="image" href="images/MH-Logo.webp"/>
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"/>
   <link rel="dns-prefetch" href="//netdna.bootstrapcdn.com"/>
+  <style>
+  .content-img {
+    max-width: 500px; /* 限制容器最大宽度 */
+    margin: 0 auto; /* 居中显示 */
+  }
+  .content-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* 防止用户交互影响动画 */
+  }
+  </style>
  </head>
  <body>
     <div class="header">
@@ -85,7 +97,7 @@
    </div>
    
    <div class="content-img">
-    <img src="images/2927.gif" alt=""/>
+    <img src="images/2927.gif" alt="" preload="auto" fetchpriority="high"/>
    </div>
    <!-- 添加图片说明文字 -->
    <div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 20px auto; padding: 20px;">
@@ -108,7 +120,7 @@
     </p>
 
    <div class="content-img">
-    <img src="images/00.gif" alt=""/>
+    <img src="images/00.gif" alt="" preload="auto" fetchpriority="high"/>
    </div>
 
    <p>
@@ -126,7 +138,7 @@
     </p>
    
     <div class="content-img">
-    <img src="images/5004.gif" alt=""/>
+    <img src="images/5004.gif" alt="" preload="auto" fetchpriority="high"/>
    </div>
 
    <p>
@@ -143,7 +155,7 @@
    </p>
 
    <div class="content-img">
-    <img src="images/5544.gif" alt=""/>
+    <img src="images/5544.gif" alt="" preload="auto" fetchpriority="high"/>
    </div>
 
    <p class="p-border" style="margin: 2.5rem 0;">
@@ -892,7 +904,7 @@
     </img>
    </div>
    <div class="comment-box answear">
-    <img class="comment-ava" src="images/med.png">
+    <img class="comment-ava" src="images/med.webp">
      <div class="comment-content">
       <div class="comment-header">
        <span class="username">
