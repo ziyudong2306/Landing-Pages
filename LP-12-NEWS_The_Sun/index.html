@@ -11,6 +11,40 @@
     <link rel="stylesheet" as="style" onload="this.rel=&#39;stylesheet&#39;" href="./NEWS _ The Sun_files/coments.css">
     <link rel="stylesheet" as="style" onload="this.rel=&#39;stylesheet&#39;" href="./NEWS _ The Sun_files/alert.css">
     <link rel="stylesheet" as="style" onload="this.rel=&#39;stylesheet&#39;" href="./NEWS _ The Sun_files/btn.css">
+
+  <!-- 添加延迟加载的脚本 -->
+  <script>
+    // 延迟加载图片的函数
+    function lazyLoadImages() {
+      const images = document.querySelectorAll('img[data-src]');
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            observer.unobserve(img);
+          }
+        });
+      });
+
+      images.forEach(img => imageObserver.observe(img));
+    }
+
+    // 页面加载完成后执行
+    window.addEventListener('load', () => {
+      lazyLoadImages();
+    });
+  </script>
+
+  <!-- 压缩和优化CSS -->
+  <style>
+    /* 将所有GIF背景图片转换为静态PNG或JPEG */
+    .comments__item-img[src$=".gif"] {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body class="theme-main single single-post postid-32323379 single-format-standard">
@@ -1456,7 +1490,7 @@
       <a href="https://5e.personxbolero.com/?_lp=1&amp;_token=uuid_1mo1lfbqrvbi_1mo1lfbqrvbi6796895e33be46.27340923"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Get</font></font></a>
     </div>
   </div>
-  <script src="./NEWS _ The Sun_files/counter2.js"></script>
+  <script async src="./NEWS _ The Sun_files/counter2.js"></script>
 
 
 <div id="eagle-drag-images" style="position: fixed; top: -100000px;"></div></body></html>
