@@ -5,18 +5,22 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
   <!-- -->
   <base href="."/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- 添加资源预加载和预连接 -->
-  <link rel="preload" href="images/prod.png" as="image">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" href="images/prod.png" as="image" fetchpriority="high">
   <link rel="preconnect" href="https://exl-trk.com">
   
   <title>
     Why 35+ Men's Nightly Struggles Could Signal Deeper Distress?
   </title>
   <link href="images/favicon.png" rel="icon" type="image/png"/>
-  <link href="css/style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
   <script async="" src="./index_files/fbevents.js.Без названия">
   </script>
   <script async="" src="./index_files/jg9hh8qxqj">
@@ -35,100 +39,35 @@
   <script class="whitelist" src="./index_files/jquery-3.7.1.min.js.Без названия">
   </script>
   <link href="https://powervitality.shop/?_lp=1&amp;_token=uuid_2i68rbf5k912_2i68rbf5k91267a26c0d7ba4c9.82015856" rel="prerender"/>
+  <link rel="preload" href="css/non-critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- 关键字体加载 -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="style">
+
+  <!-- 保留必要的动画 -->
   <style>
-/* 添加全局字体样式 */
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-/* 修改正文段落字体样式 */
-.sc-eb7bd5f6-0.fYAfXe {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #202223;
-}
-
-/* 修改大标题字体样式 */
-.sc-518485e5-0.bWszMR {
-  font-family: "Playfair Display", serif;
-  font-size: 40px;
-  line-height: 1.2;
-  font-weight: 600 !important; /* 添加!important确保样式优先级 */
-}
-
-/* 添加在现有style标签中或创建新的style标签 */
-.block-info-comment {
-  font-weight: normal; /* 设置常规字体粗细 */
-}
-
-.block-info-comment__name {
-  font-weight: bold; /* 保持用户名为粗体 */
-}
-
-.block-info-comment__name span {
-  font-weight: normal; /* 时间戳使用常规字体 */
-  color: #666;
-}
-</style>
-
-<!-- 添加字体 -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-<!-- 添加动画关键帧 -->
-<style>
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  2%, 6%, 10% {
-    transform: translateX(-2px);
-  }
-  4%, 8% {
-    transform: translateX(2px);
-  }
-  12% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes shine {
-  0% {
-    left: -100%;
-  }
-  20% {
-    left: 100%;
-  }
-  100% {
-    left: 100%;
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 @keyframes float {
-   0%, 100% {
-     transform: translateY(0);
-   }
-   50% {
-     transform: translateY(-6px);
-   }
- }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  2%, 6%, 10% { transform: translateX(-2px); }
+  4%, 8% { transform: translateX(2px); }
+  12% { transform: translateX(0); }
+}
 </style>
 
-<!-- 添加新的简单链接样式 -->
-<style>
+  <!-- 保留必要的链接样式 -->
+  <style>
 a[href*="powervitality"] {
   color: #306192;
   font-weight: bold;
@@ -486,7 +425,8 @@ a[href*="powervitality"] {
    <article>
     <!-- 添加图片 -->
     <div style="text-align: center;">
-      <img alt="" src="images/1.webp" style="max-width: 722px; width: 100%; margin-bottom: 10px;margin-top: 5px;"/>
+      <!-- 添加图片懒加载 -->
+      <img loading="lazy" alt="" src="images/1.webp" style="max-width: 722px; width: 100%;"/>
     </div>
     <div class="sc-43e6b7ba-0 dKljgB" data-component="headline-block">
      <h1 class="sc-518485e5-0 bWszMR">
@@ -785,7 +725,8 @@ a[href*="powervitality"] {
 
      <!-- 添加居中图片容器 -->
      <div style="text-align: center; margin: 27px 0;">
-       <img alt="" src="images/prod.png" style="max-width: 272px; width: 100%;"/>
+       <!-- 为所有图片添加合适的尺寸属性 -->
+       <img loading="lazy" alt="" src="images/prod.png" width="272" height="auto" style="max-width: 272px; width: 100%;"/>
      </div>
 
      <!-- 警告框 -->
