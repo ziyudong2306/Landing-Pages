@@ -48,10 +48,10 @@
      }
      .header-container {
        justify-content: flex-start;
-       padding: 0 20px;
+       padding: 0 10px;
      }
      .logo {
-       margin: 0 10px 0 0;
+       margin: 0;
      }
      
      /* 添加移动端CTA框样式 */
@@ -108,28 +108,6 @@
      .guarantee-left img {
        max-width: 150px;
        margin: 0 auto 20px;
-     }
-     
-     /* 移动端内容区域页边距优化 */
-     .content {
-       padding: 0 10px;
-     }
-     
-     .h1-title, .h2-subtitle {
-       padding: 0 5px;
-     }
-     
-     p {
-       padding: 0 5px;
-       margin: 15px 0;
-     }
-     
-     .comment-box {
-       padding: 10px;
-     }
-     
-     .comment-content {
-       padding-left: 8px;
      }
    }
 
@@ -198,58 +176,6 @@
      height: 2px;
      background-color: #d62828;
      display: block;
-   }
-
-   /* 添加表单容器的响应式样式 */
-   .form-wrapper {
-     padding: 20px;
-     max-width: 100%;
-     box-sizing: border-box;
-   }
-   
-   @media (max-width: 768px) {
-     .form-wrapper {
-       padding: 10px;
-     }
-     
-     .form-title {
-       font-size: 24px;
-       text-align: center;
-       padding: 0 5px;
-     }
-     
-     /* 确保计时器在移动设备上正确显示 */
-     #countdown {
-       display: inline-block;
-       font-size: 24px;
-     }
-     
-     /* 确保图片不会溢出容器 */
-     img {
-       max-width: 100%;
-       height: auto;
-     }
-     
-     /* 优化移动端内容间距 */
-     .content-img, .content-video {
-       margin: 15px 0;
-     }
-     
-     .symptoms ul {
-       padding-left: 15px;
-     }
-     
-     .symptoms li {
-       padding: 8px 5px;
-     }
-     
-     .spisok {
-       padding: 0 5px;
-     }
-     
-     .spisok ul {
-       padding-left: 15px;
-     }
    }
   </style>
  </head>
@@ -380,14 +306,19 @@
    <p>
     But after completing the course of therapy, their erections come back stronger than ever. These men start a new, vibrant, and fulfilling sex life! They transform before our eyes, looking 10 years younger. It's amazing to see these changes!
    </p>
-
-   <div class="content-img">
-    <picture>
-      <source srcset="images/sex1.webp" type="image/webp">
-      <img src="images/sex1.webp"/>
-    </picture>
+   <div class="content-video">
+    <video 
+      class="video" 
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="none"
+      loading="lazy"
+      poster="images/video-poster.jpg">
+      <source src="videos/video.mp4" type="video/mp4"/>
+    </video>
    </div>
-
    <p>
     A lack of sexual activity is harmful at any age — 30, 40, 50, or 70! The prostate is where ejaculate is produced, and it needs to be used. If it's not, it starts to deteriorate. This leads to a buildup of harmful microorganisms in the prostate, causing inflammation (prostatitis).
    </p>
@@ -1409,7 +1340,7 @@
        <a href="{offer}">
         Fairy Farms Hemp Gummies
        </a>
-        may well keep it that way.
+       may well keep it that way.
       </p>
      </div>
      <div class="comment-footer">
