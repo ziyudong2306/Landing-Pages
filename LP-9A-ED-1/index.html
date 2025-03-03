@@ -40,19 +40,18 @@
    
    /* 移动端导航栏样式 */
    @media (max-width: 768px) {
-     .main-nav ul li {
+     .main-nav {
        display: none;
-     }
-     .main-nav ul li:nth-child(1),
-     .main-nav ul li:nth-child(2) {
-       display: inline-block;
      }
      .header-right {
        display: none;
      }
      .header-container {
-       justify-content: space-between;
+       justify-content: center;
        padding: 0 10px;
+     }
+     .logo {
+       margin: 0 auto;
      }
    }
 
@@ -78,6 +77,11 @@
    a:hover {
      background-color: rgba(232, 180, 74, 01) !important; /* 更深的橙色高亮 */
      color: #000 !important; /* 保持文字黑色 */
+   }
+
+   /* 导航栏链接样式 - 添加此部分 */
+   .main-nav a:hover {
+     background-color: transparent !important; /* 移除导航栏链接的悬停高亮 */
    }
 
    /* 评论区链接样式 */
@@ -174,7 +178,7 @@
    </h2>
    <div class="article-meta" ">
     <span class="article-by">BY</span>
-    <a class="article-author">DAVID MCGLYNN</a>
+    <span class="article-author">DAVID MCGLYNN</span>
     <span class="article-published">PUBLISHED: <span id="publish-date"></span></span>
    </div>
    <div class="save-article">
