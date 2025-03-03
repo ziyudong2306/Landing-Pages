@@ -49,9 +49,67 @@
      .header-container {
        justify-content: center;
        padding: 0 10px;
+       max-width: 100%; /* 限制最大宽度 */
+       width: 100%; /* 确保宽度与内容区域一致 */
+       margin: 0 auto; /* 居中显示 */
+       box-sizing: border-box; /* 确保padding不会增加总宽度 */
      }
      .logo {
        margin: 0 auto;
+     }
+     .header {
+       width: 100%;
+       max-width: 100%;
+       box-sizing: border-box;
+     }
+   }
+
+   /* 确保内容区域和头部宽度一致 */
+   .header, .content, .links {
+     max-width: 1200px; /* 设置与内容区域相同的最大宽度 */
+     margin: 0 auto;
+     box-sizing: border-box;
+   }
+
+   /* 确保链接导航显示正常 */
+   .links {
+     display: block;
+     width: 100%;
+     padding: 10px 15px;
+     margin-top: 15px;
+     position: relative;
+     z-index: 1;
+   }
+
+   .links ul {
+     display: flex;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+   }
+
+   .links li {
+     margin-right: 10px;
+     position: relative;
+   }
+
+   .links li:after {
+     content: ">";
+     margin: 0 5px;
+     color: #666;
+   }
+
+   .links li:last-child:after {
+     content: "";
+   }
+
+   @media (max-width: 768px) {
+     .links {
+       padding: 10px;
+     }
+     
+     .links ul {
+       flex-wrap: wrap;
      }
    }
 
@@ -170,7 +228,7 @@
      </li>
     </ul>
    </div>
-   <h1 class="h1-title article-title" style="margin-top: 20px;">
+   <h1 class="h1-title article-title" style="margin-top: 50px;">
     Priceline Pharmacy presents a new supplement for a stable, powerful erection. Effective even after 65 years!
    </h1>
    <h2 class="h2-subtitle">
