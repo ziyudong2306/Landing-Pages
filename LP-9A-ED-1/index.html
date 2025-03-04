@@ -84,7 +84,7 @@
      color: #000 !important; /* 保持文字黑色 */
    }
 
-   /* 导航栏链接样式 - 添加此部分 */
+   /* 导航栏链接样式 */
    .main-nav a:hover {
      background-color: transparent !important; /* 移除导航栏链接的悬停高亮 */
    }
@@ -147,6 +147,38 @@
      max-width: 1000px; /* 从1200px改为800px */
      margin: 0 auto;
      padding: 0 2rem;
+   }
+
+   /* 导航栏样式调整 */
+   .main-nav ul {
+     display: flex;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     gap: 2rem; /* 增加导航项之间的间距 */
+   }
+
+   .main-nav li {
+     padding: 0.5rem 0;
+   }
+
+   .main-nav a {
+     font-size: 14px; /* 调整字体大小 */
+     font-weight: 600;
+     letter-spacing: 0.5px; /* 增加字母间距 */
+     padding: 0.5rem 0;
+     transition: color 0.3s ease;
+   }
+
+   /* 确保导航栏在移动设备上也能正常显示 */
+   @media (max-width: 768px) {
+     .main-nav ul {
+       gap: 1rem; /* 在移动设备上减小间距 */
+     }
+     
+     .main-nav a {
+       font-size: 12px; /* 在移动设备上减小字体 */
+     }
    }
   </style>
  </head>
