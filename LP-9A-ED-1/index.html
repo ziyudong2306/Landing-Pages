@@ -38,157 +38,86 @@
      src: url(../fonts/Anton-Regular.woff2) format('woff2');
    }
    
-   /* 移动端导航栏样式 */
+   /* 基础重置 */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     overflow-x: hidden;
+   }
+
+   /* 主容器样式 */
+   .content {
+     width: 100%;
+     max-width: 1200px; /* 或者你想要的最大宽度 */
+     margin: 0 auto;
+     padding: 0 15px; /* 统一的页边距 */
+   }
+
    @media (max-width: 768px) {
-     .main-nav {
-       display: none;
-     }
-     .header-right {
-       display: none;
-     }
-     .header-container {
-       justify-content: center;
-       padding: 10px;
-       position: relative;
-     }
-     .logo {
-       margin: 0 auto;
-       text-align: center;
-     }
-     .logo img {
-       display: block;
-       margin: 0 auto;
-     }
-     
-     /* 内容容器样式调整 */
+     /* 移动端基础样式 */
      .content {
        width: 100%;
-       padding: 0;
-       margin: 0;
-       overflow: hidden; /* 防止子元素负边距导致横向滚动 */
-     }
-
-     /* 表单外层容器 */
-     .form-wrapper {
-       width: 100vw; /* 使用视窗宽度 */
-       margin-left: calc(-50vw + 50%); /* 居中对齐 */
-       margin-right: calc(-50vw + 50%);
-       padding: 20px 0;
-       background-color: #fff6e5; /* 黄色背景色 */
-       position: relative;
-       left: 50%;
-       right: 50%;
-       transform: translateX(-50%);
-       box-sizing: border-box;
-     }
-
-     /* 表单内容容器 */
-     .form {
-       max-width: 90%;
+       padding: 0 15px; /* 保持统一的页边距 */
        margin: 0 auto;
-       padding: 0;
+     }
+
+     /* 表单包装器 - 需要全宽显示 */
+     .form-wrapper {
+       width: 100vw;
+       margin-left: -15px; /* 抵消父容器的padding */
+       margin-right: -15px;
+       padding: 20px 15px;
+       background-color: #fff6e5;
+     }
+
+     /* 表单内容 */
+     .form {
+       width: 100%;
+       max-width: 600px;
+       margin: 0 auto;
        display: flex;
        flex-direction: column;
        align-items: center;
      }
 
-     /* Guarantee 部分容器 */
+     /* 表单左右两侧 */
+     .form-left,
+     .form-right {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+     }
+
+     /* 保证部分 */
      .guarantee {
-       width: 90%;
+       width: 100%;
+       max-width: 600px;
        margin: 20px auto;
-       padding: 15px;
+       padding: 0;
      }
 
      .guarantee ul {
+       list-style: none;
        display: flex;
        flex-direction: column;
        align-items: center;
+       gap: 20px;
        padding: 0;
-       margin: 0;
-       width: 100%;
      }
 
      .guarantee-left,
      .guarantee-right {
        width: 100%;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-     }
-
-     .guarantee-left img {
-       max-width: 150px;
-       height: auto;
-     }
-
-     /* 左侧图片容器 */
-     .form-left {
-       width: 100%;
-       padding: 0;
-       margin: 0;
        text-align: center;
-     }
-
-     .form-left img {
-       max-width: 100%;
-       height: auto;
-       margin: 0 auto;
-       display: block;
-     }
-
-     /* 右侧内容容器 */
-     .form-right {
-       width: 100%;
-       padding: 0;
-       margin: 0;
-       text-align: center;
-     }
-
-     /* 标题样式 */
-     .form-right-title {
-       font-size: 24px;
-       margin: 15px 0;
-       padding: 0 15px;
-       line-height: 1.3;
-     }
-
-     /* 段落文本样式 */
-     .formp1, .formp2 {
-       font-size: 16px;
-       margin: 10px 0;
-       padding: 0 15px;
-       line-height: 1.5;
-     }
-
-     /* CTA按钮样式 */
-     .form-right a {
-       width: 90%;
-       max-width: 280px;
-       margin: 15px auto;
-       padding: 12px 20px;
-       font-size: 16px;
-       box-sizing: border-box;
-     }
-
-     /* 计时器样式 */
-     .timer {
-       font-size: 18px;
-       margin: 15px 0;
-       text-align: center;
-     }
-
-     /* 底部安全信息样式 */
-     .formdown {
-       font-size: 14px;
-       margin: 15px 0;
-       padding: 0 15px;
-       text-align: center;
-     }
-
-     /* 安全图标样式 */
-     .secure {
-       display: block;
-       margin: 15px auto;
      }
    }
 
