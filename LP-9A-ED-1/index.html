@@ -60,23 +60,65 @@
        margin: 0 auto;
      }
      
-     /* 修改表单容器样式,让背景延伸到边缘 */
+     /* 内容容器样式调整 */
+     .content {
+       width: 100%;
+       padding: 0;
+       margin: 0;
+       overflow: hidden; /* 防止子元素负边距导致横向滚动 */
+     }
+
+     /* 表单外层容器 */
      .form-wrapper {
-       padding: 15px 0; /* 移除左右内边距 */
-       margin: 20px -15px; /* 使用负边距延伸到边缘 */
-       width: calc(100% + 30px); /* 补偿负边距 */
+       width: 100vw; /* 使用视窗宽度 */
+       margin-left: calc(-50vw + 50%); /* 居中对齐 */
+       margin-right: calc(-50vw + 50%);
+       padding: 20px 0;
+       background-color: #fff6e5; /* 黄色背景色 */
+       position: relative;
+       left: 50%;
+       right: 50%;
+       transform: translateX(-50%);
        box-sizing: border-box;
      }
 
-     /* 修改表单布局 */
+     /* 表单内容容器 */
      .form {
+       max-width: 90%;
+       margin: 0 auto;
+       padding: 0;
+       display: flex;
        flex-direction: column;
        align-items: center;
-       gap: 20px;
+     }
+
+     /* Guarantee 部分容器 */
+     .guarantee {
+       width: 90%;
+       margin: 20px auto;
        padding: 15px;
+     }
+
+     .guarantee ul {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 0;
        margin: 0;
        width: 100%;
-       box-sizing: border-box;
+     }
+
+     .guarantee-left,
+     .guarantee-right {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+
+     .guarantee-left img {
+       max-width: 150px;
+       height: auto;
      }
 
      /* 左侧图片容器 */
@@ -141,54 +183,6 @@
        margin: 15px 0;
        padding: 0 15px;
        text-align: center;
-     }
-
-     /* 调整保障部分的居中对齐 */
-     .guarantee {
-       padding: 15px;
-       margin: 20px 0;
-       text-align: center; /* 确保整体居中 */
-     }
-
-     .guarantee ul {
-       flex-direction: column;
-       align-items: center;
-       gap: 20px;
-       padding: 0;
-       margin: 0;
-       list-style: none; /* 移除列表样式 */
-     }
-
-     .guarantee-left {
-       width: 100%;
-       display: flex;
-       justify-content: center; /* 水平居中 */
-       margin-bottom: 15px; /* 增加与文字的间距 */
-     }
-
-     .guarantee-left img {
-       max-width: 150px;
-       height: auto;
-       display: block; /* 确保图片作为块级元素 */
-     }
-
-     .guarantee-right {
-       width: 100%;
-       text-align: center;
-       padding: 0 15px;
-     }
-
-     .guarantee-right h2 {
-       font-size: 20px;
-       margin: 10px 0;
-       text-align: center; /* 确保标题居中 */
-     }
-
-     .guarantee-right p {
-       font-size: 16px;
-       line-height: 1.5;
-       margin: 10px 0;
-       text-align: center; /* 确保段落文字居中 */
      }
 
      /* 安全图标样式 */
