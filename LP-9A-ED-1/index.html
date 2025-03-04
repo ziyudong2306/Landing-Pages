@@ -60,11 +60,12 @@
        margin: 0 auto;
      }
      
-     /* 修改表单容器样式 */
+     /* 修改表单容器样式,让背景延伸到边缘 */
      .form-wrapper {
-       padding: 15px;
-       margin: 20px 0;
-       width: 100%;
+       padding: 15px 0; /* 移除左右内边距 */
+       margin: 20px -15px; /* 使用负边距延伸到边缘 */
+       width: calc(100% + 30px); /* 补偿负边距 */
+       box-sizing: border-box;
      }
 
      /* 修改表单布局 */
@@ -142,10 +143,11 @@
        text-align: center;
      }
 
-     /* 保障部分样式 */
+     /* 调整保障部分的居中对齐 */
      .guarantee {
        padding: 15px;
        margin: 20px 0;
+       text-align: center; /* 确保整体居中 */
      }
 
      .guarantee ul {
@@ -154,16 +156,20 @@
        gap: 20px;
        padding: 0;
        margin: 0;
+       list-style: none; /* 移除列表样式 */
      }
 
      .guarantee-left {
        width: 100%;
-       text-align: center;
+       display: flex;
+       justify-content: center; /* 水平居中 */
+       margin-bottom: 15px; /* 增加与文字的间距 */
      }
 
      .guarantee-left img {
        max-width: 150px;
-       margin: 0 auto;
+       height: auto;
+       display: block; /* 确保图片作为块级元素 */
      }
 
      .guarantee-right {
@@ -175,12 +181,14 @@
      .guarantee-right h2 {
        font-size: 20px;
        margin: 10px 0;
+       text-align: center; /* 确保标题居中 */
      }
 
      .guarantee-right p {
        font-size: 16px;
        line-height: 1.5;
        margin: 10px 0;
+       text-align: center; /* 确保段落文字居中 */
      }
 
      /* 安全图标样式 */
