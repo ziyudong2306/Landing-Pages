@@ -71,53 +71,70 @@
      /* 表单包装器 - 需要全宽显示 */
      .form-wrapper {
        width: 100vw;
-       margin-left: -15px; /* 抵消父容器的padding */
-       margin-right: -15px;
+       margin-left: calc(-15px);
+       margin-right: calc(-15px);
        padding: 20px 15px;
        background-color: #fff6e5;
      }
 
-     /* 表单内容 */
+     /* 表单标题 */
+     .form-title {
+       width: 100%;
+       text-align: center;
+       margin-bottom: 20px;
+     }
+
+     /* 表单主体 */
      .form {
        width: 100%;
-       max-width: 600px;
        margin: 0 auto;
        display: flex;
        flex-direction: column;
        align-items: center;
      }
 
-     /* 表单左右两侧 */
-     .form-left,
+     /* 表单左侧 */
+     .form-left {
+       width: 100%;
+       margin-bottom: 20px;
+     }
+
+     .form-left img {
+       width: 100%;
+       max-width: 300px;
+       height: auto;
+       margin: 0 auto;
+       display: block;
+     }
+
+     /* 表单右侧 */
      .form-right {
        width: 100%;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
        text-align: center;
      }
 
-     /* 保证部分 */
+     .form-right-title {
+       font-size: 24px;
+       margin: 0 0 15px 0;
+     }
+
+     .formp1, 
+     .formp2 {
+       margin: 10px 0;
+     }
+
+     /* CTA按钮容器 */
+     .form-right a {
+       width: 100%;
+       max-width: 280px;
+       margin: 15px auto;
+       display: block;
+     }
+
+     /* 保障部分 */
      .guarantee {
        width: 100%;
-       max-width: 600px;
        margin: 20px auto;
-       padding: 0;
-     }
-
-     .guarantee ul {
-       list-style: none;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       gap: 20px;
-       padding: 0;
-     }
-
-     .guarantee-left,
-     .guarantee-right {
-       width: 100%;
-       text-align: center;
      }
    }
 
