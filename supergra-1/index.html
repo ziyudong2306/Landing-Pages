@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <link href="img/favicon.jpg" rel="shortcut icon"/>
+  <title>
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script>
+   !function(y,u,r,i){y._yuri_track||((n=y._yuri_track=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)}).queue=n.queue||[],y._yuri_track._fp||(y._yuri_track._fp=1,t=u.createElement(r),s=u.getElementsByTagName(r)[0],t.async=1,t.src=i,s.parentNode.insertBefore(t,s)))}(window,document,"script","https://cdn.jsdelivr.net/gh/adzon/assets/pixel.js?_rid={click_id}");
+  </script>
+ </head>
+ <body>
+  <input name="country_code" type="hidden" value="US"/>
+  <div class="loader">
+   <div class="lds-ring">
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+   </div>
+  </div>
+  <div id="app">
+   <div class="content">
+    <div class="center">
+     <div class="logo">
+      <img alt="" class="logo__img" src="images/logo.svg"/>
+     </div>
+     <div class="title" data-translation-key="title">
+     </div>
+    </div>
+    <div class="luckywheel">
+     <div class="wheel">
+      <div class="wheel__element">
+       <img alt="" src="images/wheel.png"/>
+      </div>
+      <div class="wheel__info">
+       <div class="wheel__text-block" style="--total: 8">
+       </div>
+      </div>
+      <img alt="" class="wheel__wrap" draggable="false" src="images/wheel-test.png"/>
+     </div>
+     <img alt="" class="wheel__active" draggable="false" src="images/arrow.png"/>
+     <img alt="" class="wheel__btn" draggable="false" id="play" src="images/btn.png"/>
+    </div>
+    <div class="placeholder">
+    </div>
+   </div>
+   <div class="footer">
+    <img alt="" class="footer__img" src="images/footer.png"/>
+   </div>
+   <div class="modal" id="stage-modal">
+    <div class="modal-wrap">
+     <div class="modal-content">
+      <div class="modal__head">
+       <span data-translation-key="modalHead">
+       </span>
+       <span class="modal__close">
+        ×
+       </span>
+      </div>
+      <div class="modal__body">
+       <div>
+        <div class="modal__result">
+        </div>
+        <div class="modal__info" data-translation-key="modalStageInfo">
+        </div>
+       </div>
+       <div class="modal__btn" data-translation-key="modalStageBtn">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="modal" id="final-modal">
+   <div class="modal-wrap">
+    <div class="modal-content">
+     <div class="modal__head">
+      <span data-translation-key="modalHead">
+      </span>
+     </div>
+     <div class="modal__body">
+      <div>
+       <div class="modal__result">
+       </div>
+       <div class="modal__info" data-translation-key="modalStageInfo">
+       </div>
+      </div>
+      <button class="popup__win-btn regBtn go modal__btn" data-translation-key="modalStageBtn" id="regBtn">
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="js/jquery-3.6.3.min.js">
+  </script>
+  <script src="js/gsap.min.js">
+  </script>
+  <script src="js/script.js" type="module">
+  </script>
+ </body>
+</html>
