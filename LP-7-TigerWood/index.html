@@ -67,9 +67,100 @@
             .modal-cta-button:hover {
                 background-color: #2d8c3a;
             }
+
+            /* Spin Wheel Styles */
+            .spin-wheel-container {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 300px;
+                height: 300px;
+                z-index: 9998;
+                background: white;
+                border-radius: 50%;
+                box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            }
+
+            .wheel {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 50%;
+                border: 10px solid #f3f3f3;
+                overflow: hidden;
+                transition: transform 5s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+            }
+
+            .wheel-section {
+                position: absolute;
+                width: 50%;
+                height: 50%;
+                transform-origin: 100% 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .pointer {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 40px;
+                background: #ff0000;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                z-index: 1;
+            }
+
+            #spinResult {
+                display: none;
+                position: fixed;
+                z-index: 10000;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            }
+
+            #spinResult h2 {
+                color: #3ab349;
+                margin-bottom: 20px;
+            }
         </style>
     </head>     
     <body> 
+        <!-- Spin Wheel -->
+        <div class="spin-wheel-container">
+            <div class="pointer"></div>
+            <div class="wheel" id="wheel">
+                <div class="wheel-section" style="transform: rotate(0deg); background: #ff6b6b;">10% OFF</div>
+                <div class="wheel-section" style="transform: rotate(60deg); background: #4ecdc4;">15% OFF</div>
+                <div class="wheel-section" style="transform: rotate(120deg); background: #45b7d1;">20% OFF</div>
+                <div class="wheel-section" style="transform: rotate(180deg); background: #96ceb4;">25% OFF</div>
+                <div class="wheel-section" style="transform: rotate(240deg); background: #ff9f1c;">30% OFF</div>
+                <div class="wheel-section" style="transform: rotate(300deg); background: #3ab349;">BUY 3 GET 2 FREE</div>
+            </div>
+        </div>
+
+        <!-- Spin Result Modal -->
+        <div id="spinResult">
+            <h2>Congratulations!</h2>
+            <p>You won our best offer:</p>
+            <h3>BUY 3 GET 2 FREE</h3>
+            <p>Don't miss this amazing opportunity!</p>
+            <a href="https://raingers-thround.com/click" class="modal-cta-button">CLAIM YOUR OFFER NOW</a>
+        </div>
+
         <!-- Modal Popup HTML -->
         <div id="ctaModal" class="modal">
             <div class="modal-content">
@@ -387,6 +478,42 @@ var waypoint = new Waypoint({
                     }
                 }
             }
+        </script>
+        <script>
+            // Spin Wheel functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const wheel = document.getElementById('wheel');
+                const spinResult = document.getElementById('spinResult');
+                let canSpin = true;
+
+                // Auto spin after 5 seconds
+                setTimeout(() => {
+                    if (canSpin) {
+                        spinWheel();
+                    }
+                }, 5000);
+
+                function spinWheel() {
+                    if (!canSpin) return;
+                    canSpin = false;
+
+                    // Calculate rotation to land on "BUY 3 GET 2 FREE" (300 degrees)
+                    const totalRotation = 300 + (360 * 5); // 5 full rotations + target position
+                    wheel.style.transform = `rotate(${totalRotation}deg)`;
+
+                    // Show result after spin animation
+                    setTimeout(() => {
+                        spinResult.style.display = 'block';
+                    }, 5000); // Match this with CSS transition duration
+                }
+
+                // Close result modal when clicking outside
+                window.addEventListener('click', function(event) {
+                    if (event.target === spinResult) {
+                        spinResult.style.display = 'none';
+                    }
+                });
+            });
         </script>
     </body>
 </html>
