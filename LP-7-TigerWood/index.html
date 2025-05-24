@@ -13,8 +13,72 @@
         <link rel="stylesheet" type="text/css" href="css/8cf3e4b461d56a743063c192bf5a2297.css"> 
         <link rel="stylesheet" type="text/css" href="css/f8e0f620ae4921d33d3550f3f7c8577a.css"> 
         <style>.bigText { font-size: large !important; line-height: 2 !important; } .bigText > p { font-size: large !important; line-height: 2 !important; }</style>         
+        <!-- Modal Popup CSS -->
+        <style>
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+            }
+            
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 500px;
+                border-radius: 10px;
+                text-align: center;
+                position: relative;
+            }
+            
+            .modal-close {
+                position: absolute;
+                right: 10px;
+                top: 5px;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            
+            .modal-close:hover {
+                color: red;
+            }
+            
+            .modal-cta-button {
+                display: inline-block;
+                background-color: #3ab349;
+                color: white;
+                padding: 15px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-top: 20px;
+                transition: background-color 0.3s;
+            }
+            
+            .modal-cta-button:hover {
+                background-color: #2d8c3a;
+            }
+        </style>
     </head>     
     <body> 
+        <!-- Modal Popup HTML -->
+        <div id="ctaModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Special Offer!</h2>
+                <p>Don't miss out on this amazing opportunity to try Fairy Farms Hemp Gummies!</p>
+                <a href="{offer_url}" class="modal-cta-button">GET YOUR BOTTLE NOW</a>
+            </div>
+        </div>
         <nav class="navbar navbar-default"> 
             <div class="container"> 
                 <div class="navbar-header"> 
@@ -302,8 +366,27 @@ var waypoint = new Waypoint({
                 document.getElementById('promoEndDate').textContent = formatDate(endDate);
             }
             
-            // 页面加载时执行
-            setPromoEndDate();
+            // Modal Popup JavaScript
+            window.onload = function() {
+                setPromoEndDate();
+                
+                // Show modal after 3 seconds
+                setTimeout(function() {
+                    document.getElementById('ctaModal').style.display = 'block';
+                }, 3000);
+                
+                // Close modal when clicking the close button
+                document.querySelector('.modal-close').onclick = function() {
+                    document.getElementById('ctaModal').style.display = 'none';
+                }
+                
+                // Close modal when clicking outside
+                window.onclick = function(event) {
+                    if (event.target == document.getElementById('ctaModal')) {
+                        document.getElementById('ctaModal').style.display = 'none';
+                    }
+                }
+            }
         </script>
     </body>
 </html>
