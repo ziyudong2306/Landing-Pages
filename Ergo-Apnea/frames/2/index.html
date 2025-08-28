@@ -1,0 +1,442 @@
+<!DOCTYPE html> <html lang="zh-cn" class="fc-widget-small multi-widget-ui"><head><meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+    <title>Freshchat</title>
+    <meta name="description" content>
+    
+<meta name="hotline-web/config/environment" content="%7B%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22modulePrefix%22%3A%22hotline-web%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22%2F%22%2C%22rootURL%22%3A%22%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22cdnUrl%22%3A%22https%3A%2F%2Fassetscdn-wchat.freshchat.com%2Fstatic%2F%22%2C%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22cdnEnabled%22%3Atrue%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22hotline-web%22%2C%22version%22%3A%220.0.0%2B5b4856af%22%7D%2C%22contentSecurityPolicy%22%3A%7B%22style-src%22%3A%22'unsafe-inline'%20*%22%2C%22font-src%22%3A%22'self'%20*%20data%3A%22%2C%22img-src%22%3A%22'self'%20*%20data%3A%22%2C%22connect-src%22%3A%22'self'%20*%22%2C%22script-src%22%3A%22'self'%20'unsafe-eval'%20'unsafe-inline'%20https%3A%2F%2Fassetscdn-wchat.freshchat.com%20https%3A%2F%2F*.freshchat.com%20https%3A%2F%2F*.freshpori.com%20https%3A%2F%2Frts-static-prod.freshworksapi.com%2Fus%2Frts-min.js%22%2C%22child-src%22%3A%22'self'%20*%20blob%3A%22%2C%22media-src%22%3A%22'self'%20https%3A%2F%2F*.freshchat.com%20https%3A%2F%2F*.freshpori.com%22%2C%22manifest-src%22%3A%22'self'%20https%3A%2F%2F*.freshchat.com%20https%3A%2F%2F*.freshpori.com%22%2C%22default-src%22%3A%5B%22'none'%22%5D%7D%2C%22contentSecurityPolicyHeader%22%3A%22Content-Security-Policy%22%2C%22contentSecurityPolicyMeta%22%3Atrue%2C%22outputPath%22%3A%22static%22%2C%22socket%22%3A%7B%22domain%22%3A%7B%22production%22%3A%22rts-us-fcht.freshworksapi.com%22%7D%2C%22supportAppId%22%3A%5B%22228339547221745%22%2C%221308634746881%22%5D%2C%22albDomain%22%3A%7B%22production%22%3A%22rts-us-fcht.freshworksapi.com%22%7D%2C%22protocol%22%3A%22https%3A%2F%2F%22%2C%22subDelay%22%3A15000%2C%22reconnectDelay%22%3A10%7D%2C%22webpush%22%3A%7B%22domain%22%3A%7B%22production%22%3A%22%7BappName%7D.webpush.freshchat.com%22%2C%22crm%22%3A%7B%22production%22%3A%22%7BappName%7D.wchat.webpush.myfreshworks.com%22%7D%7D%2C%22protocol%22%3A%22https%3A%2F%2F%22%7D%2C%22hotlineEnv%22%3A%7B%22type%22%3A%22production%22%7D%2C%22cdn%22%3A%7B%22enabled%22%3A%7B%22forAssets%22%3Atrue%2C%22forApi%22%3Atrue%7D%2C%22assets%22%3A%22assetscdn-%22%2C%22api%22%3A%22apicdn-%22%2C%22domain%22%3A%7B%22production%22%3A%22.freshchat.com%2F%7BdeploymentPath%7D%22%7D%2C%22subDomain%22%3A%22wchat%22%2C%22protocol%22%3A%22https%3A%2F%2F%22%7D%2C%22rtsCdnUrl%22%3A%7B%22production%22%3A%22https%3A%2F%2Frts-static-prod.freshworksapi.com%2Fus%2Frts-min.js%22%7D%2C%22helpWidgetCdnUrl%22%3A%22https%3A%2F%2Fassetscdn-wchat.freshchat.com%2Fhelp-widget%2Fuse1-00%22%2C%22haystackConfig%22%3A%7B%22production%22%3A%7B%22endPoint%22%3A%22https%3A%2F%2Frum.haystack.es%2Ffreshchat%2F_logs%22%2C%22authToken%22%3A%226f5962f1bb5440dc30f0a464a0c63fc5%22%7D%2C%22staging%22%3A%7B%22endPoint%22%3A%22https%3A%2F%2Frum.stage.haystack.es%2Ffreshchat%2F_logs%22%2C%22authToken%22%3A%22a6198e17791993148328fafdf0a3c7c1%22%7D%2C%22cacheLogTime%22%3A60000%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
+
+
+    
+<link href="stylesheet_3.css" rel="stylesheet">
+
+    
+<link href="stylesheet_2.css" rel="stylesheet">
+
+
+    
+  <meta name="referrer" content="no-referrer"><meta http-equiv="content-security-policy" content="default-src 'none'; connect-src 'self' data: blob:; font-src 'self' data: blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' data: blob:; frame-src 'self' data: blob:; media-src 'self' data: blob:; script-src 'self' 'unsafe-inline' data: blob:; object-src 'self' data: blob:;"></head>
+  <body class="webchat ember-application" dir="ltr">
+    
+
+    
+
+
+    
+
+<link href="stylesheet_1.css" rel="stylesheet">
+<link href="stylesheet_0.css" rel="stylesheet">
+
+
+
+    <div id="ember-basic-dropdown-wormhole"></div>
+  
+
+<!---->  <div aria-live="polite" id="ember3" class="content-vp ember-view"><!----><div class="hotline-launcher     " tabindex="-1">
+  <div class="viewport h-chat-custom ">
+    <div class="widget-status animated fadeInUp faster" aria-live="polite">
+      <div class="help-text  dn">
+<!----></div>
+
+    </div>
+    <div id="ember86" class="h-channel ember-view"><div class="home-content">
+  <div class="h-header solid">
+    <div class="title fadeIn ">
+      <div class="logo">
+        <img class="animated zoomIn faster" src="images/0.svg" alt="Freshchat">
+      </div>
+<!---->    </div>
+  </div>
+  <div class="body sections faq-body ">
+    <div class="dummy-bar solid " style="height:3rem"></div>
+    <div class="card-layout scroll-section">
+      <div class="channel-section animated fadeInUp delay faster h-categories">
+  <div class="channel-title">
+    <div class="list-sub-title" role="heading" aria-level="2">
+      同我们聊天
+    </div>
+<!---->  </div>
+      <ul class="channel-list">
+<!---->            <li>
+              <div id="ember88" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/46228" id="ember89" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I need to track my order
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember90" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember91" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Hey there! 😄 Need a hand with the latest tracking update for your order? We've got you covered! Just give us a shout, and we'll be more than happy to assist you!&nbsp;</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+<!---->            <li>
+              <div id="ember93" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/46227" id="ember94" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I did not receive my order
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember95" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember96" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Having trouble finding your order? Don't worry, just send us a message, and we'll be more than happy to help you out! 😊</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+<!---->            <li>
+              <div id="ember98" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/385876" id="ember99" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I have a question about payment
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember100" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember101" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Need a helping hand with any payment-related queries? 😊</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+<!---->            <li>
+              <div id="ember103" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/385873" id="ember104" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I want to purchase more products
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember105" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember106" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Hey there! Want to make the most of our awesome discount offers? No worries, we've got your back! 😊We're here to help you out!</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+<!---->            <li>
+              <div id="ember108" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/34806" id="ember109" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I need assistance using the product(s)
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember110" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember111" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Need help using our product? No worries! We've got your back, and we're here to assist you every step of the way. Just reach out, and we'll be happy to guide you through any issues or questions you may have. Our friendly team is always ready to lend a hand!&nbsp;🤗</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+<!---->            <li>
+              <div id="ember113" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/46232" id="ember114" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I want to receive more information about the product
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember115" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember116" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Got any concerns about our product? No worries—just give us a shout, and we'll do everything we can to assist you! We're here to help! 😊</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+<!---->            <li>
+              <div id="ember118" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/385875" id="ember119" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I want to modify my order
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember120" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember121" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Need help with your recent purchase? Don't worry; we completely understand that things can be unpredictable and that sometimes plans need to be adjusted. We're here to help and have got you covered!</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+<!---->            <li>
+              <div id="ember123" class="channel animated fadeInLeft enabled-agent-typing-indicator ember-view"><a href="https://wchat.freshchat.com/home/385874" id="ember124" class="ember-view channel-link">
+  <div class="h-category-item">
+    <div class="h-category-icon">
+        <span class="category-content-wrap theme-1">
+          <span class="category-content" aria-hidden="true">
+            I
+          </span>
+        </span>
+    </div>
+   <div class="channel-names ">
+      <div class="channel-content">
+        <div class="h-category-detail ">
+          <p class="channel-name  ">
+            I want to return my order
+          </p>
+            <div class="welcome-text ">
+                <div class="ui-agent-typing-indicator hidden" role="status" aria-live="polite" aria-label="处理人正在输入">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+
+              <div class="message-text">
+                 <div class="last-msg-preview ">
+                    <div id="ember125" class="ember-view">  <div class="h-comment    ">
+<!---->
+      <div id="ember126" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">We totally understand that sometimes things don't go as planned with your purchase, and that's completely alright! If you happen to need to return your order within 30 days of receiving it, we've got a hassle-free solution for you.</div>
+<!----></div>
+ 
+  </div>
+<!----></div>
+                  </div>
+                              </div>
+            </div>
+        </div>
+          <div class="h-conv-user">
+<!---->          </div>
+      </div>
+    </div>
+  </div>
+</a></div>
+              <div class="border-bottom"></div>
+            </li>
+      </ul>
+<!---->    </div>
+<!---->
+<!----><!----><!---->
+      <div class="bottom-gradient" style="visibility:hidden"></div>
+    </div>
+  </div>
+</div>
+  <div class="footer-note animated slideInUp faster show-when-zoom">
+    提供方： &nbsp;<img class="icon" src="images/1.png" alt="提供方："> &nbsp;
+    <a href="https://www.freshworks.com/live-chat-software/powered-by-freshchat/" class="product" target="_blank" rel="noopener noreferrer">
+      Freshchat
+    </a>
+</div>
+
+</div>
+  </div>
+<!----></div>
+
+<!---->
+<div class="d-hotline h-btn animated zoomIn faster eager-load    " tabindex="0" role="button" data-ember-action data-ember-action-4="4">
+      <div id="chat-icon" aria-hidden="true"></div>
+    <div class=" " aria-hidden="true">
+      <span aria-hidden="true">
+        
+      </span>
+    </div>
+</div>
+<style type="text/css">html,body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Segoe UI Emoji","Roboto","Oxygen","Ubuntu","Fira Sans","Droid Sans","Cantarell","Helvetica Neue",sans-serif!important}.h-chat-custom .h-channel .h-header,.h-chat-custom .h-channel .dummy-bar{background-color:#684fd9!important}.h-chat-custom .h-channel .h-header{border:0.1px solid #684fd9!important}.h-chat-custom .h-channel .h-header .title{color:#ffffff!important}.d-hotline{background-color:#684fd9!important;color:#ffffff!important;border-color:transparent #684fd9 transparent transparent}#chat-icon{background:#ffffff!important}#chat-icon::before,#chat-icon::after{background-color:#684fd9!important}</style></div>
+</body></html>

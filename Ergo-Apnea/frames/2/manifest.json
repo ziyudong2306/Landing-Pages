@@ -1,0 +1,12 @@
+{
+  "originalUrl": "https://wchat.freshchat.com/home",
+  "indexFilename": "index.html",
+  "resources": {
+    "stylesheet_0.css": "https://assetscdn-wchat.freshchat.com/static/fd-messaging.7526289ac08669dad3ab.css",
+    "stylesheet_1.css": "https://assetscdn-wchat.freshchat.com/static/assets/chunk.39cd9f6f728c6de39251.css",
+    "stylesheet_2.css": "https://assetscdn-wchat.freshchat.com/static/assets/hotline-web.d41d8cd98f00b204e9800998ecf8427e.css",
+    "stylesheet_3.css": "https://assetscdn-wchat.freshchat.com/static/assets/vendor.d64d219ca4493f67a3970efc52d51c86.css",
+    "images/0.svg": "https://assetscdn-wchat.freshchat.com/static/assets/freshchat-line.7327fc2a43ff6a857c38e96ffa7e00f2.svg",
+    "images/1.png": "https://assetscdn-wchat.freshchat.com/static/assets/freshchat_logo.f6e2dc08072c0bf69ca4c005e561b7dc.png"
+  }
+}

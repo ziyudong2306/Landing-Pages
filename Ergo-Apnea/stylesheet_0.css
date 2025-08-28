@@ -1,0 +1,13 @@
+
+    .quote:before {
+        color: #ccc;
+        content: "“";
+        font-size: 64px;
+        line-height: 0;
+        margin-right: 5px;
+        position: relative;
+        bottom: -30px;
+    }
+    .quote * {
+        display: inline;
+    }
